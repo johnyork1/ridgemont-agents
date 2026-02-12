@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<!--
+  Master Agent Daily Monitor — macOS LaunchAgent
+
+  INSTALLATION:
+    1. Update the environment variables below with your credentials
+    2. Copy this file to ~/Library/LaunchAgents/
+       cp "com.ridgemont.masteragent.monitor.plist" ~/Library/LaunchAgents/
+    3. Load the agent:
+       launchctl load ~/Library/LaunchAgents/com.ridgemont.masteragent.monitor.plist
+    4. To test immediately:
+       launchctl start com.ridgemont.masteragent.monitor
+    5. To unload:
+       launchctl unload ~/Library/LaunchAgents/com.ridgemont.masteragent.monitor.plist
+
+  SCHEDULE: Runs daily at 7:00 AM local time
+-->
+<dict>
+    <key>Label</key>
+    <string>com.ridgemont.masteragent.monitor</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/bin/python3</string>
+        <string>/Users/johnyork/My Drive/Ridgemont Studio/Claude Cowork/Master Agent/scripts/daily_monitor.py</string>
+    </array>
+
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>7</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <!-- REQUIRED: Your Anthropic API key -->
+        <key>ANTHROPIC_API_KEY</key>
+        <string>YOUR_API_KEY_HERE</string>
+
+        <!-- Cowork folder paths -->
+        <key>COWORK_ROOT</key>
+        <string>/Users/johnyork/My Drive/Ridgemont Studio/Claude Cowork</string>
+        <key>MASTER_AGENT_DIR</key>
+        <string>/Users/johnyork/My Drive/Ridgemont Studio/Claude Cowork/Master Agent</string>
+
+        <!-- Email configuration (Gmail with App Password) -->
+        <key>EMAIL_SENDER</key>
+        <string>your_email@gmail.com</string>
+        <key>EMAIL_PASSWORD</key>
+        <string>YOUR_GMAIL_APP_PASSWORD_HERE</string>
+        <key>EMAIL_RECIPIENT</key>
+        <string>your_email@gmail.com</string>
+    </dict>
+
+    <!-- Log output for debugging -->
+    <key>StandardOutPath</key>
+    <string>/Users/johnyork/My Drive/Ridgemont Studio/Claude Cowork/Master Agent/logs/monitor_stdout.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/johnyork/My Drive/Ridgemont Studio/Claude Cowork/Master Agent/logs/monitor_stderr.log</string>
+
+    <!-- Run if the scheduled time was missed (e.g., laptop was asleep) -->
+    <key>MisfireGracePeriod</key>
+    <integer>3600</integer>
+
+    <key>RunAtLoad</key>
+    <false/>
+</dict>
+</plist>

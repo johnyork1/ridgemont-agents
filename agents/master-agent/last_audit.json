@@ -1,0 +1,121 @@
+{
+  "snapshot_date": "2026-02-08",
+  "audit_type": "full_audit",
+  "audit_version": "v9",
+  "previous_audit": "2026-02-08 (full_audit v8)",
+  "agents_discovered": 11,
+  "active_agents": 11,
+  "deprecated_agents": 0,
+  "ecosystem_score": 8.3,
+  "agents": {
+    "Frozen Cloud Website": {
+      "health_score": 5.0,
+      "scores": {"clarity": 2, "scope": 9, "data_quality": 6, "utilization": 2, "effectiveness": 6},
+      "file_count": 3,
+      "has_rules": false,
+      "last_modified": "2026-01-26",
+      "status": "active",
+      "issues": ["No RULES.md", "Low standalone value — merge candidate"]
+    },
+    "Make Videos": {
+      "health_score": 7.6,
+      "scores": {"clarity": 7, "scope": 7, "data_quality": 8, "utilization": 9, "effectiveness": 7},
+      "file_count": 45,
+      "has_rules": true,
+      "last_modified": "2026-02-08",
+      "status": "active",
+      "issues": ["node_modules/ from Remotion (excluded by .gitignore)"]
+    },
+    "Make-Music": {
+      "health_score": 7.2,
+      "scores": {"clarity": 8, "scope": 8, "data_quality": 7, "utilization": 6, "effectiveness": 7},
+      "file_count": 30,
+      "has_rules": true,
+      "last_modified": "2026-02-08",
+      "status": "active",
+      "issues": []
+    },
+    "Ridgemont Catalog Manager": {
+      "health_score": 8.8,
+      "scores": {"clarity": 9, "scope": 8, "data_quality": 9, "utilization": 9, "effectiveness": 9},
+      "file_count": 56,
+      "has_rules": true,
+      "last_modified": "2026-02-08",
+      "status": "active",
+      "issues": ["catalog.json.bak backup file (low priority advisory)", ".env file with secrets (accepted risk)"]
+    },
+    "Ridgemont Studio Website": {
+      "health_score": 7.8,
+      "scores": {"clarity": 8, "scope": 8, "data_quality": 8, "utilization": 3, "effectiveness": 6},
+      "file_count": 9,
+      "has_rules": true,
+      "last_modified": "2026-02-08",
+      "status": "active",
+      "issues": []
+    },
+    "Suno Studio": {
+      "health_score": 8.8,
+      "scores": {"clarity": 9, "scope": 10, "data_quality": 9, "utilization": 7, "effectiveness": 9},
+      "file_count": 27,
+      "has_rules": true,
+      "last_modified": "2026-02-08",
+      "status": "active",
+      "issues": ["__pycache__ on disk (harmless)"]
+    },
+    "X-Posts": {
+      "health_score": 8.8,
+      "scores": {"clarity": 9, "scope": 8, "data_quality": 9, "utilization": 10, "effectiveness": 8},
+      "file_count": 33,
+      "has_rules": true,
+      "last_modified": "2026-02-08",
+      "status": "active",
+      "issues": []
+    },
+    "frozen-cloud-portal": {
+      "health_score": 7.2,
+      "scores": {"clarity": 8, "scope": 9, "data_quality": 7, "utilization": 4, "effectiveness": 8},
+      "file_count": 6,
+      "has_rules": true,
+      "last_modified": "2026-02-08",
+      "status": "active",
+      "issues": ["venv/ with 10K+ files still on disk"]
+    },
+    "dewey-cheatem-esq": {
+      "health_score": 8.6,
+      "scores": {"clarity": 9, "scope": 9, "data_quality": 10, "utilization": 6, "effectiveness": 9},
+      "file_count": 42,
+      "has_rules": true,
+      "last_modified": "2026-02-08",
+      "status": "active",
+      "issues": []
+    },
+    "dr-vinnie-boombatz": {
+      "health_score": 7.4,
+      "scores": {"clarity": 10, "scope": 9, "data_quality": 9, "utilization": 2, "effectiveness": 7},
+      "file_count": 24,
+      "has_rules": true,
+      "last_modified": "2026-02-08",
+      "status": "active",
+      "issues": ["Low utilization — no new outputs since supplement protocol"]
+    },
+    "Master Agent": {
+      "health_score": 8.4,
+      "scores": {"clarity": 9, "scope": 9, "data_quality": 9, "utilization": 8, "effectiveness": 8},
+      "file_count": 15,
+      "has_rules": true,
+      "last_modified": "2026-02-08",
+      "status": "active",
+      "issues": []
+    }
+  },
+  "merge_candidates": [
+    {
+      "agents": ["Frozen Cloud Website", "Ridgemont Studio Website"],
+      "score": 5.8,
+      "priority": "low"
+    }
+  ],
+  "split_candidates": [],
+  "action_items": [],
+  "open_action_items": 0
+}

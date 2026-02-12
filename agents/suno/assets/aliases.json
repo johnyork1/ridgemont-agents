@@ -1,0 +1,10 @@
+[
+  {"canonical": "Hip Hop", "aliases": ["hip-hop", "hiphop", "hip hop"]},
+  {"canonical": "R&B", "aliases": ["rnb", "r&b", "rb", "rhythm and blues"]},
+  {"canonical": "Electronic", "aliases": ["edm", "electronica"]},
+  {"canonical": "Rock", "aliases": ["rock n roll"]},
+  {"canonical": "Classical", "aliases": ["orchestral", "symphonic"]},
+  {"canonical": "Metal", "aliases": ["heavy metal"]},
+  {"canonical": "Punk", "aliases": ["punk rock"]},
+  {"canonical": "Reggae", "aliases": ["roots reggae"]}
+]

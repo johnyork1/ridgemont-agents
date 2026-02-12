@@ -1,0 +1,978 @@
+{
+  "artists": [
+    {
+      "name": "Frozen Cloud",
+      "type": "band",
+      "publishers": [
+        "Frozen Cloud Music"
+      ],
+      "albums": [],
+      "song_count": 134,
+      "songs": [
+        {
+          "title": "Down The Road",
+          "legacy_code": "DTRD",
+          "album": ""
+        },
+        {
+          "title": "The Journey",
+          "legacy_code": "TJOU",
+          "album": ""
+        },
+        {
+          "title": "Miami",
+          "legacy_code": "MIAM",
+          "album": ""
+        },
+        {
+          "title": "The Games You Play",
+          "legacy_code": "TGYP",
+          "album": ""
+        },
+        {
+          "title": "Complete",
+          "legacy_code": "CMPL",
+          "album": ""
+        },
+        {
+          "title": "The Summer",
+          "legacy_code": "TSUM",
+          "album": ""
+        },
+        {
+          "title": "You Take Me",
+          "legacy_code": "YTME",
+          "album": ""
+        },
+        {
+          "title": "Trivial Eyes",
+          "legacy_code": "TREY",
+          "album": ""
+        },
+        {
+          "title": "Canzonet",
+          "legacy_code": "CANZ",
+          "album": ""
+        },
+        {
+          "title": "Coherent",
+          "legacy_code": "COHE",
+          "album": ""
+        },
+        {
+          "title": "I Missed the Call",
+          "legacy_code": "IMTC",
+          "album": ""
+        },
+        {
+          "title": "Punchy Toes",
+          "legacy_code": "PUNT",
+          "album": ""
+        },
+        {
+          "title": "Hyena",
+          "legacy_code": "HYNA",
+          "album": ""
+        },
+        {
+          "title": "Forget About You",
+          "legacy_code": "FABY",
+          "album": ""
+        },
+        {
+          "title": "Natural High",
+          "legacy_code": "NATH",
+          "album": ""
+        },
+        {
+          "title": "The 8th Caller",
+          "legacy_code": "TH8C",
+          "album": ""
+        },
+        {
+          "title": "She's From England",
+          "legacy_code": "SFEN",
+          "album": ""
+        },
+        {
+          "title": "Subtle Glance",
+          "legacy_code": "STGL",
+          "album": ""
+        },
+        {
+          "title": "Spanning Time",
+          "legacy_code": "SPNT",
+          "album": ""
+        },
+        {
+          "title": "Count The Ways",
+          "legacy_code": "CTWY",
+          "album": ""
+        },
+        {
+          "title": "Museum",
+          "legacy_code": "MUSM",
+          "album": ""
+        },
+        {
+          "title": "Dreaming",
+          "legacy_code": "DRMG",
+          "album": ""
+        },
+        {
+          "title": "Cool Desire",
+          "legacy_code": "COOD",
+          "album": ""
+        },
+        {
+          "title": "Far Away",
+          "legacy_code": "FARA",
+          "album": ""
+        },
+        {
+          "title": "Losing Sleep",
+          "legacy_code": "LOSS",
+          "album": ""
+        },
+        {
+          "title": "When I'm With You",
+          "legacy_code": "WIWY",
+          "album": ""
+        },
+        {
+          "title": "Separation Zone",
+          "legacy_code": "SEPZ",
+          "album": ""
+        },
+        {
+          "title": "Not A Friend",
+          "legacy_code": "NAFR",
+          "album": ""
+        },
+        {
+          "title": "Cruel",
+          "legacy_code": "CRUL",
+          "album": ""
+        },
+        {
+          "title": "She Gave Her Best",
+          "legacy_code": "SGHB",
+          "album": ""
+        },
+        {
+          "title": "The Forest",
+          "legacy_code": "TFST",
+          "album": ""
+        },
+        {
+          "title": "Hollow",
+          "legacy_code": "HOLL",
+          "album": ""
+        },
+        {
+          "title": "Try Me",
+          "legacy_code": "TRYM",
+          "album": ""
+        },
+        {
+          "title": "What It Takes",
+          "legacy_code": "WITK",
+          "album": ""
+        },
+        {
+          "title": "Caught Up In The Rush",
+          "legacy_code": "CUIR",
+          "album": ""
+        },
+        {
+          "title": "Lost In Del Mar",
+          "legacy_code": "LIDM",
+          "album": ""
+        },
+        {
+          "title": "The Fool",
+          "legacy_code": "THFL",
+          "album": ""
+        },
+        {
+          "title": "Beautiful Dreams",
+          "legacy_code": "BEUD",
+          "album": ""
+        },
+        {
+          "title": "You Break All The Rules",
+          "legacy_code": "YBAR",
+          "album": ""
+        },
+        {
+          "title": "The Big Machine",
+          "legacy_code": "THBM",
+          "album": ""
+        },
+        {
+          "title": "Cloudy Sky",
+          "legacy_code": "CLDY",
+          "album": ""
+        },
+        {
+          "title": "On & On",
+          "legacy_code": "ONON",
+          "album": ""
+        },
+        {
+          "title": "Waiting",
+          "legacy_code": "WTNG",
+          "album": ""
+        },
+        {
+          "title": "Sea Of Tranquility",
+          "legacy_code": "STRQ",
+          "album": ""
+        },
+        {
+          "title": "Cup Of Dreams",
+          "legacy_code": "CUPD",
+          "album": ""
+        },
+        {
+          "title": "Rocket to Moon",
+          "legacy_code": "RK2M",
+          "album": ""
+        },
+        {
+          "title": "Walking",
+          "legacy_code": "WALK",
+          "album": ""
+        },
+        {
+          "title": "Midnight",
+          "legacy_code": "MIDN",
+          "album": ""
+        },
+        {
+          "title": "Newsflash",
+          "legacy_code": "NEWS",
+          "album": ""
+        },
+        {
+          "title": "Eagles",
+          "legacy_code": "EAGL",
+          "album": ""
+        },
+        {
+          "title": "Plastic World",
+          "legacy_code": "PLST",
+          "album": ""
+        },
+        {
+          "title": "Love For Pride",
+          "legacy_code": "L4PR",
+          "album": ""
+        },
+        {
+          "title": "Pluto's A Planet",
+          "legacy_code": "PLTO",
+          "album": ""
+        },
+        {
+          "title": "Martians",
+          "legacy_code": "MARS",
+          "album": ""
+        },
+        {
+          "title": "Orbiting",
+          "legacy_code": "ORBG",
+          "album": ""
+        },
+        {
+          "title": "Don't Stop",
+          "legacy_code": "DONT",
+          "album": ""
+        },
+        {
+          "title": "Wishing",
+          "legacy_code": "WISH",
+          "album": ""
+        },
+        {
+          "title": "Quisling",
+          "legacy_code": "QUIS",
+          "album": ""
+        },
+        {
+          "title": "Illegal Search",
+          "legacy_code": "ILGL",
+          "album": ""
+        },
+        {
+          "title": "Zebra",
+          "legacy_code": "ZEBR",
+          "album": ""
+        },
+        {
+          "title": "Watch Me Fly",
+          "legacy_code": "WMFL",
+          "album": ""
+        },
+        {
+          "title": "Foolish Dreams",
+          "legacy_code": "FDRM",
+          "album": ""
+        },
+        {
+          "title": "Kingdom",
+          "legacy_code": "KING",
+          "album": ""
+        },
+        {
+          "title": "Universe",
+          "legacy_code": "UNIV",
+          "album": ""
+        },
+        {
+          "title": "Visionary",
+          "legacy_code": "VISN",
+          "album": ""
+        },
+        {
+          "title": "Atmosphere",
+          "legacy_code": "ATMS",
+          "album": ""
+        },
+        {
+          "title": "Cloud 9",
+          "legacy_code": "CLD9",
+          "album": ""
+        },
+        {
+          "title": "Crazy",
+          "legacy_code": "CRZY",
+          "album": ""
+        },
+        {
+          "title": "So Charming",
+          "legacy_code": "SOCH",
+          "album": ""
+        },
+        {
+          "title": "Mercury",
+          "legacy_code": "MERC",
+          "album": ""
+        },
+        {
+          "title": "Neptune's Kingdom",
+          "legacy_code": "NEPK",
+          "album": ""
+        },
+        {
+          "title": "Love Like Wildfire",
+          "legacy_code": "LLWF",
+          "album": ""
+        },
+        {
+          "title": "Falling Down",
+          "legacy_code": "FLGD",
+          "album": ""
+        },
+        {
+          "title": "Girl I Won\u2019t Ask",
+          "legacy_code": "GIWA",
+          "album": ""
+        },
+        {
+          "title": "Meaning Of Life",
+          "legacy_code": "MNGL",
+          "album": ""
+        },
+        {
+          "title": "Mental Chains",
+          "legacy_code": "MNTC",
+          "album": ""
+        },
+        {
+          "title": "I Can't Feel",
+          "legacy_code": "ICNT",
+          "album": ""
+        },
+        {
+          "title": "Lonely Time",
+          "legacy_code": "LNLT",
+          "album": ""
+        },
+        {
+          "title": "Steel Rails",
+          "legacy_code": "STLR",
+          "album": ""
+        },
+        {
+          "title": "All This Time",
+          "legacy_code": "ALTT",
+          "album": ""
+        },
+        {
+          "title": "Touch The Ground",
+          "legacy_code": "TTGD",
+          "album": ""
+        },
+        {
+          "title": "The Feeling's Gone",
+          "legacy_code": "TFGN",
+          "album": ""
+        },
+        {
+          "title": "Hooked On You",
+          "legacy_code": "HKOY",
+          "album": ""
+        },
+        {
+          "title": "Too Far Gone",
+          "legacy_code": "2FAR",
+          "album": ""
+        },
+        {
+          "title": "Talk To The Moon",
+          "legacy_code": "TTTM",
+          "album": ""
+        },
+        {
+          "title": "Stars Collide",
+          "legacy_code": "STRS",
+          "album": ""
+        },
+        {
+          "title": "Hollywood Sunset",
+          "legacy_code": "HLYW",
+          "album": ""
+        },
+        {
+          "title": "I Can Do No Wrong",
+          "legacy_code": "ICAN",
+          "album": ""
+        },
+        {
+          "title": "I Need Her",
+          "legacy_code": "INHR",
+          "album": ""
+        },
+        {
+          "title": "Crown Of The Day",
+          "legacy_code": "COTD",
+          "album": ""
+        },
+        {
+          "title": "Clean Escape",
+          "legacy_code": "CLES",
+          "album": ""
+        },
+        {
+          "title": "Shine A Light",
+          "legacy_code": "SHAL",
+          "album": ""
+        },
+        {
+          "title": "Champagne In The Glass",
+          "legacy_code": "CITG",
+          "album": ""
+        },
+        {
+          "title": "Go Back In Time",
+          "legacy_code": "GBIT",
+          "album": ""
+        },
+        {
+          "title": "All I Want Is You",
+          "legacy_code": "ALLI",
+          "album": ""
+        },
+        {
+          "title": "Rain Drenched Night",
+          "legacy_code": "RDRN",
+          "album": ""
+        },
+        {
+          "title": "Edge Of The World",
+          "legacy_code": "EOTW",
+          "album": ""
+        },
+        {
+          "title": "Teenage Crush",
+          "legacy_code": "TEEN",
+          "album": ""
+        },
+        {
+          "title": "Lets Sing Along",
+          "legacy_code": "LSAL",
+          "album": ""
+        },
+        {
+          "title": "Lonely Cloud",
+          "legacy_code": "LNLY",
+          "album": ""
+        },
+        {
+          "title": "Tragic Ending",
+          "legacy_code": "TRGC",
+          "album": ""
+        },
+        {
+          "title": "Insanity",
+          "legacy_code": "INSN",
+          "album": ""
+        },
+        {
+          "title": "Winding Road",
+          "legacy_code": "WNDR",
+          "album": ""
+        },
+        {
+          "title": "Full Circle",
+          "legacy_code": "FLLC",
+          "album": ""
+        },
+        {
+          "title": "Birds At Midnight",
+          "legacy_code": "BRDM",
+          "album": ""
+        },
+        {
+          "title": "Can It Be Mine",
+          "legacy_code": "CIBM",
+          "album": ""
+        },
+        {
+          "title": "Getting Old",
+          "legacy_code": "GTOD",
+          "album": ""
+        },
+        {
+          "title": "Hands Of Time",
+          "legacy_code": "HOFT",
+          "album": ""
+        },
+        {
+          "title": "Heroic",
+          "legacy_code": "HERO",
+          "album": ""
+        },
+        {
+          "title": "I'm Okay",
+          "legacy_code": "IMOK",
+          "album": ""
+        },
+        {
+          "title": "Inside My Mind",
+          "legacy_code": "ISMY",
+          "album": ""
+        },
+        {
+          "title": "Kickin' It",
+          "legacy_code": "KKIT",
+          "album": ""
+        },
+        {
+          "title": "Lone Cypress",
+          "legacy_code": "LNCY",
+          "album": ""
+        },
+        {
+          "title": "Milky Way",
+          "legacy_code": "MLWY",
+          "album": ""
+        },
+        {
+          "title": "Saturn's Ring",
+          "legacy_code": "STRN",
+          "album": ""
+        },
+        {
+          "title": "Set Your Love Free",
+          "legacy_code": "SYLF",
+          "album": ""
+        },
+        {
+          "title": "Cup Of Tea",
+          "legacy_code": "COTE",
+          "album": ""
+        },
+        {
+          "title": "Better Than Dreams",
+          "legacy_code": "BTDR",
+          "album": ""
+        },
+        {
+          "title": "Chaotic Scenes",
+          "legacy_code": "CHSC",
+          "album": ""
+        },
+        {
+          "title": "Happy",
+          "legacy_code": "HAPY",
+          "album": ""
+        },
+        {
+          "title": "Light Of Your Love",
+          "legacy_code": "LOYL",
+          "album": ""
+        },
+        {
+          "title": "Look Away",
+          "legacy_code": "LKAW",
+          "album": ""
+        },
+        {
+          "title": "Pretty Eyes",
+          "legacy_code": "PRTY",
+          "album": ""
+        },
+        {
+          "title": "Silly Man",
+          "legacy_code": "SLMN",
+          "album": ""
+        },
+        {
+          "title": "Silver And Gold",
+          "legacy_code": "SVGD",
+          "album": ""
+        },
+        {
+          "title": "Venus",
+          "legacy_code": "VENS",
+          "album": ""
+        },
+        {
+          "title": "Candlelight",
+          "legacy_code": "CNDL",
+          "album": ""
+        },
+        {
+          "title": "Drowning Memory",
+          "legacy_code": "DRMM",
+          "album": ""
+        },
+        {
+          "title": "The Perfect Dream",
+          "legacy_code": "TPDR",
+          "album": ""
+        },
+        {
+          "title": "Will I Ever Know",
+          "legacy_code": "WIEK",
+          "album": ""
+        },
+        {
+          "title": "Dreams And Reality",
+          "legacy_code": "DRAR",
+          "album": ""
+        },
+        {
+          "title": "Learn To Dance",
+          "legacy_code": "LTDN",
+          "album": ""
+        },
+        {
+          "title": "Thank You",
+          "legacy_code": "THKU",
+          "album": ""
+        },
+        {
+          "title": "Night Sky",
+          "legacy_code": "NSKY",
+          "album": ""
+        }
+      ],
+      "band_id": "FROZEN_CLOUD"
+    },
+    {
+      "name": "Bajan Sun",
+      "type": "band",
+      "publishers": [
+        "Bajan Sun Publishing"
+      ],
+      "albums": [],
+      "song_count": 11,
+      "songs": [
+        {
+          "title": "Simple Dream",
+          "legacy_code": "SMPL",
+          "album": ""
+        },
+        {
+          "title": "So Brightly",
+          "legacy_code": "SBRT",
+          "album": ""
+        },
+        {
+          "title": "Spiral Away",
+          "legacy_code": "SPRA",
+          "album": ""
+        },
+        {
+          "title": "Stop And Think",
+          "legacy_code": "STTH",
+          "album": ""
+        },
+        {
+          "title": "Trouble Bad",
+          "legacy_code": "TRBD",
+          "album": ""
+        },
+        {
+          "title": "Calmly Gently",
+          "legacy_code": "CLMG",
+          "album": ""
+        },
+        {
+          "title": "Soft Steps",
+          "legacy_code": "SFTS",
+          "album": ""
+        },
+        {
+          "title": "Stupid Questions",
+          "legacy_code": "STUQ",
+          "album": ""
+        },
+        {
+          "title": "Twelve To Forever",
+          "legacy_code": "TWFR",
+          "album": ""
+        },
+        {
+          "title": "Vested Interest",
+          "legacy_code": "VSTI",
+          "album": ""
+        },
+        {
+          "title": "Love Comes Easy",
+          "legacy_code": "LCEA",
+          "album": ""
+        }
+      ],
+      "notes": "Default artist for songs composed by John York",
+      "band_id": "BAJAN_SUN"
+    },
+    {
+      "name": "Park Bellevue",
+      "type": "band",
+      "publishers": [
+        "Park Bellevue Collective"
+      ],
+      "albums": [],
+      "song_count": 6,
+      "songs": [
+        {
+          "title": "Nevermore",
+          "legacy_code": "NVRM",
+          "album": ""
+        },
+        {
+          "title": "Delayed",
+          "legacy_code": "DLYD",
+          "album": ""
+        },
+        {
+          "title": "I'm Coming Over",
+          "legacy_code": "ICOV",
+          "album": ""
+        },
+        {
+          "title": "Why",
+          "legacy_code": "WHYY",
+          "album": ""
+        },
+        {
+          "title": "Jump",
+          "legacy_code": "JUMP",
+          "album": ""
+        },
+        {
+          "title": "Too Late",
+          "legacy_code": "PPRT",
+          "album": ""
+        }
+      ],
+      "band_id": "PARK_BELLEVUE"
+    },
+    {
+      "name": "Honest Mile",
+      "type": "band",
+      "publishers": [
+        "Frozen Cloud Music"
+      ],
+      "albums": [
+        "Mile of Madness"
+      ],
+      "song_count": 2,
+      "songs": [
+        {
+          "title": "Crazy",
+          "legacy_code": "CRZY",
+          "album": "Mile of Madness"
+        },
+        {
+          "title": "Hooked On You",
+          "legacy_code": "HKOY",
+          "album": "Mile of Madness"
+        }
+      ],
+      "band_id": "HONEST_MILE"
+    },
+    {
+      "name": "Echoes of Jahara",
+      "type": "band",
+      "publishers": [
+        "Frozen Cloud Music"
+      ],
+      "albums": [
+        "Babylon Fever"
+      ],
+      "song_count": 1,
+      "songs": [
+        {
+          "title": "Crazy",
+          "legacy_code": "CRZY",
+          "album": "Babylon Fever"
+        }
+      ],
+      "band_id": "ECHOES_JAHARA"
+    },
+    {
+      "name": "Stone Meridian",
+      "type": "band",
+      "publishers": [
+        "Frozen Cloud Music"
+      ],
+      "albums": [
+        "Dark Pattern"
+      ],
+      "song_count": 1,
+      "songs": [
+        {
+          "title": "The Games You Play",
+          "legacy_code": "TGYP",
+          "album": "Dark Pattern"
+        }
+      ],
+      "band_id": "STONE_MERIDIAN"
+    },
+    {
+      "name": "Phantom Frenzy",
+      "type": "band",
+      "publishers": [
+        "Frozen Cloud Music"
+      ],
+      "albums": [
+        "Exit Liquidity"
+      ],
+      "song_count": 1,
+      "songs": [
+        {
+          "title": "Crazy",
+          "legacy_code": "CRZY",
+          "album": "Exit Liquidity"
+        }
+      ],
+      "band_id": "PHANTOM_FRENZY"
+    },
+    {
+      "name": "Fuego Urbano",
+      "type": "band",
+      "publishers": [
+        "Frozen Cloud Music"
+      ],
+      "albums": [
+        "Noche Incendiada"
+      ],
+      "song_count": 1,
+      "songs": [
+        {
+          "title": "Crazy",
+          "legacy_code": "CRZY",
+          "album": "Noche Incendiada"
+        }
+      ],
+      "band_id": "FUEGO_URBANO"
+    },
+    {
+      "name": "Mercury Halo",
+      "type": "band",
+      "publishers": [
+        "Frozen Cloud Music"
+      ],
+      "albums": [
+        "Blackout Notes"
+      ],
+      "song_count": 1,
+      "songs": [
+        {
+          "title": "Canzonet",
+          "legacy_code": "CANZ",
+          "album": "Blackout Notes"
+        }
+      ],
+      "band_id": "MERCURY_HALO"
+    },
+    {
+      "name": "Dust & Thunder",
+      "type": "band",
+      "publishers": [
+        "Bajan Sun Publishing"
+      ],
+      "albums": [
+        "A Time When Men Die"
+      ],
+      "song_count": 1,
+      "songs": [
+        {
+          "title": "Trouble Bad",
+          "legacy_code": "TRBD",
+          "album": "A Time When Men Die"
+        }
+      ],
+      "band_id": "DUST_THUNDER"
+    },
+    {
+      "name": "Harbor Grey",
+      "type": "band",
+      "publishers": [
+        "Bajan Sun Publishing",
+        "Frozen Cloud Music"
+      ],
+      "albums": [
+        "Porchlight Cartography"
+      ],
+      "song_count": 2,
+      "songs": [
+        {
+          "title": "Trouble Bad",
+          "legacy_code": "TROB",
+          "album": "Porchlight Cartography"
+        },
+        {
+          "title": "Rocket to Moon",
+          "legacy_code": "RK2M",
+          "album": "Porchlight Cartography"
+        }
+      ],
+      "band_id": "HARBOR_GREY"
+    },
+    {
+      "name": "Thomas Wren",
+      "type": "solo",
+      "publishers": [
+        "Bajan Sun Publishing"
+      ],
+      "albums": [
+        "Mercury in the Margins"
+      ],
+      "song_count": 1,
+      "songs": [
+        {
+          "title": "Better Than Dreams",
+          "legacy_code": "BTDR",
+          "album": "Mercury in the Margins"
+        }
+      ],
+      "band_id": "THOMAS_WREN"
+    }
+  ]
+}

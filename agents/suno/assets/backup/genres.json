@@ -1,0 +1,170 @@
+[
+  {
+    "genre_id": "G0001",
+    "name": "Pop",
+    "aliases": "Top 40, Mainstream Pop",
+    "sort_order": 10,
+    "is_active": true,
+    "notes": null
+  },
+  {
+    "genre_id": "G0002",
+    "name": "Rock",
+    "aliases": "Guitar Rock",
+    "sort_order": 20,
+    "is_active": true,
+    "notes": null
+  },
+  {
+    "genre_id": "G0003",
+    "name": "Hip Hop",
+    "aliases": "Rap, Urban",
+    "sort_order": 30,
+    "is_active": true,
+    "notes": null
+  },
+  {
+    "genre_id": "G0004",
+    "name": "R&B",
+    "aliases": "Rhythm and Blues, Soul",
+    "sort_order": 40,
+    "is_active": true,
+    "notes": null
+  },
+  {
+    "genre_id": "G0005",
+    "name": "Electronic",
+    "aliases": "EDM, Dance",
+    "sort_order": 50,
+    "is_active": true,
+    "notes": null
+  },
+  {
+    "genre_id": "G0006",
+    "name": "Country",
+    "aliases": "Country Western",
+    "sort_order": 60,
+    "is_active": true,
+    "notes": null
+  },
+  {
+    "genre_id": "G0007",
+    "name": "Jazz",
+    "aliases": null,
+    "sort_order": 70,
+    "is_active": true,
+    "notes": null
+  },
+  {
+    "genre_id": "G0008",
+    "name": "Blues",
+    "aliases": null,
+    "sort_order": 80,
+    "is_active": true,
+    "notes": null
+  },
+  {
+    "genre_id": "G0009",
+    "name": "Classical",
+    "aliases": "Orchestral",
+    "sort_order": 90,
+    "is_active": true,
+    "notes": null
+  },
+  {
+    "genre_id": "G0010",
+    "name": "Folk",
+    "aliases": "Acoustic, Traditional",
+    "sort_order": 100,
+    "is_active": true,
+    "notes": null
+  },
+  {
+    "genre_id": "G0011",
+    "name": "Reggae",
+    "aliases": "Roots, Dancehall",
+    "sort_order": 110,
+    "is_active": true,
+    "notes": null
+  },
+  {
+    "genre_id": "G0012",
+    "name": "Latin",
+    "aliases": "Latino, Hispanic",
+    "sort_order": 120,
+    "is_active": true,
+    "notes": null
+  },
+  {
+    "genre_id": "G0013",
+    "name": "Metal",
+    "aliases": "Heavy Metal",
+    "sort_order": 130,
+    "is_active": true,
+    "notes": null
+  },
+  {
+    "genre_id": "G0014",
+    "name": "Punk",
+    "aliases": null,
+    "sort_order": 140,
+    "is_active": true,
+    "notes": null
+  },
+  {
+    "genre_id": "G0015",
+    "name": "Funk",
+    "aliases": null,
+    "sort_order": 150,
+    "is_active": true,
+    "notes": null
+  },
+  {
+    "genre_id": "G0016",
+    "name": "Gospel",
+    "aliases": "Christian, Worship",
+    "sort_order": 160,
+    "is_active": true,
+    "notes": null
+  },
+  {
+    "genre_id": "G0017",
+    "name": "World",
+    "aliases": "Global, International",
+    "sort_order": 170,
+    "is_active": true,
+    "notes": null
+  },
+  {
+    "genre_id": "G0018",
+    "name": "Ambient",
+    "aliases": "Atmospheric, Soundscape",
+    "sort_order": 180,
+    "is_active": true,
+    "notes": null
+  },
+  {
+    "genre_id": "G0019",
+    "name": "Indie",
+    "aliases": "Independent",
+    "sort_order": 190,
+    "is_active": true,
+    "notes": null
+  },
+  {
+    "genre_id": "G0020",
+    "name": "Alternative",
+    "aliases": "Alt",
+    "sort_order": 200,
+    "is_active": true,
+    "notes": null
+  },
+  {
+    "genre_id": "G0021",
+    "name": "Cinematic",
+    "aliases": "Film, Soundtrack, Score",
+    "sort_order": 210,
+    "is_active": true,
+    "notes": null
+  }
+]

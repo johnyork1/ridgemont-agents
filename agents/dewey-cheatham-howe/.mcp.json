@@ -1,0 +1,29 @@
+{
+  "mcpServers": {
+    "courtlistener": {
+      "type": "url",
+      "url": "http://localhost:8000/mcp/",
+      "description": "CourtListener MCP Server — Free Law Project. Search millions of federal and state court opinions, PACER dockets, oral arguments, and judicial data across 3,352+ U.S. jurisdictions. Includes citation lookup and verification API. Requires COURTLISTENER_API_TOKEN env var (free at courtlistener.com/sign-in/).",
+      "notes": "Install via: git clone https://github.com/Travis-Prall/court-listener-mcp && cd CourtListener && uv sync && uv run start"
+    },
+    "google-scholar-legal": {
+      "type": "command",
+      "command": "python",
+      "args": ["/Users/johnyork/mcp-servers/google-scholar-mcp/main.py"],
+      "description": "Google Scholar MCP Server — Search legal opinions, case law, and law review articles via Google Scholar's Case Law database. Free, no API key required.",
+      "notes": "Install via: git clone https://github.com/yourusername/google-scholar-mcp && pip install -r requirements.txt"
+    },
+    "web-search": {
+      "type": "builtin",
+      "description": "Claude's built-in web search — Used for real-time lookups on Cornell LII, Justia, California Legislature, Idaho Legislature, eCFR, and other free legal databases."
+    },
+    "google-drive": {
+      "type": "builtin",
+      "description": "Google Drive connector — Search and retrieve legal documents, contracts, research notes, and reference materials stored in your Drive."
+    },
+    "filesystem": {
+      "type": "builtin",
+      "description": "Local filesystem access — Read/write legal documents, research files, and case briefs in your designated legal workspace folder."
+    }
+  }
+}

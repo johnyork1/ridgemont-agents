@@ -1,0 +1,48 @@
+{
+  "_description": "The 7 output formats for batch_produce.py",
+  "_version": "1.0",
+  "formats": {
+    "full_video": {
+      "resolution": "1920x1080",
+      "aspect": "16:9",
+      "max_duration": null,
+      "description": "Full Music Video"
+    },
+    "short_916": {
+      "resolution": "1080x1920",
+      "aspect": "9:16",
+      "max_duration": 59,
+      "description": "YouTube Short"
+    },
+    "tiktok": {
+      "resolution": "1080x1920",
+      "aspect": "9:16",
+      "max_duration": 60,
+      "description": "TikTok"
+    },
+    "reel_4x5": {
+      "resolution": "1080x1350",
+      "aspect": "4:5",
+      "max_duration": 90,
+      "description": "Instagram Reel"
+    },
+    "lyric_video": {
+      "resolution": "1920x1080",
+      "aspect": "16:9",
+      "max_duration": null,
+      "description": "Lyric Video"
+    },
+    "visualizer": {
+      "resolution": "1920x1080",
+      "aspect": "16:9",
+      "max_duration": null,
+      "description": "Audio-Reactive Visualizer"
+    },
+    "sync_reel": {
+      "resolution": "1920x1080",
+      "aspect": "16:9",
+      "max_duration": 60,
+      "description": "Sync Licensing Reel"
+    }
+  }
+}

@@ -1,0 +1,383 @@
+{
+  "registry_version": "3.4",
+  "last_updated": "2026-02-09",
+  "cowork_root_path": "/Users/johnyork/My Drive/Ridgemont Studio/Claude Cowork",
+  "total_agents": 11,
+  "ecosystem_score": 9.8,
+  "connector_inventory": {
+    "oauth": 4,
+    "mcp": 25,
+    "total": 29
+  },
+  "changelog": [
+    {
+      "date": "2026-02-09",
+      "version": "3.4",
+      "changes": [
+        "MAKE VIDEOS v3.0 OVERHAUL COMPLETE — 13 Python scripts, 15 specialized skills, 6-step pipeline with hash-based idempotency and Social UI Safe Zone enforcement.",
+        "NEW: 13 scripts — prep_characters.py, safe_zone.py, render_signature.py, preflight_validator.py, analyze_catalog.py, batch_produce.py, ingest_song.py, generate_artist_profile.py, baseline_master.py, meme_sign_render.py, beat_sync_cuts.py, generate_thumbnails.py, lyric_video.py, visualizer.py.",
+        "NEW: 15 specialized skills — batch-ffmpeg-processor, beat-sync-editor, thumbnail-generator, format-converter, lyric-overlay, audio-analyzer, comfyui-launcher, artist-profile-manager, character-asset-factory, mood-mapper, meme-sign-generator, character-animator, safe-zone-validator, baseline-recipe-builder, render-signature-manager.",
+        "NEW: mood_map.json, genre_defaults.json, video_tech_audit_feb2026.md added to key data files.",
+        "PIPELINE ENHANCEMENT: 121+ song catalog across 21 genres. 7 output formats per song with resolution-aware vertical strategy. Weeter & Blubby character pipeline fully integrated.",
+        "Make Videos health: 9.4 → 9.8. Ecosystem score: 9.7 → 9.8."
+      ]
+    },
+    {
+      "date": "2026-02-09",
+      "version": "3.3",
+      "changes": [
+        "MAKE VIDEOS OVERHAUL v2.0 — Complete agent rebuild from crypto YouTube to music video production pipeline.",
+        "NEW: RULES.md v2.0 — Identity as Technical Director, 10 behavior rules, 5-step pipeline, 7 output formats, 8 skills, self-prompt reminders.",
+        "NEW: genre_visual_map.json — 21 genres mapped with AI models, color palettes, motion styles, ComfyUI workflows.",
+        "NEW: genre_profile_templates.json — 21 genre identity templates with typography, motifs, mood palettes.",
+        "NEW: 6 Python scripts — ingest_song.py, analyze_catalog.py, artist_profile_generator.py, generate_visuals.py, batch_produce.py, catalog_outputs.py.",
+        "NEW: 7 skill definitions — analyze-song, generate-visuals, assemble-video, batch-produce, artist-profile, format-convert, quality-check.",
+        "NEW: video-production-pipeline.md workflow — 7-step data flow with timing estimates (~14 min/song), batch processing (121 songs/3-4 days), failure recovery.",
+        "NEW: 12 artist profiles generated from catalog data (Bajan Sun, Dust & Thunder, Echoes of Jahara, Frozen Cloud, Fuego Urbano, Harbor Grey, Honest Mile, Mercury Halo, Park Bellevue, Phantom Frenzy, Stone Meridian, Thomas Wren).",
+        "NEW: progress_log.json + job_queue.json initialized in catalog/.",
+        "Make Videos health: 8.6 → 9.4. Ecosystem score: 9.6 → 9.7."
+      ]
+    },
+    {
+      "date": "2026-02-09",
+      "version": "3.2",
+      "changes": [
+        "AUTOMATION LAYER — 4 cross-agent workflow files created, 4 agent configs updated with workflow refs.",
+        "NEW: Ridgemont Catalog Manager workflows/new-song-onboarding.md — end-to-end flow: catalog entry → portal sync → website update → pitch prep.",
+        "NEW: frozen-cloud-portal workflows/catalog-sync-check.md — validates local catalog.json against Catalog Manager source, detects drift and orphans.",
+        "NEW: Make Videos workflows/daily-content-pipeline.md — full morning-to-upload cycle: LunarCrush research → script → recording aids → shorts → metadata → distribution.",
+        "NEW: Master Agent workflows/ecosystem-health-check.md — comprehensive audit: config validation, connector checks, data consistency, file hygiene, health scoring.",
+        "SMOKE TEST RESULTS: 9/10 testable connectors passing. Gmail reconnected (fixed). Google Drive search endpoint has connector-side bug (fetch works). X API min count=10.",
+        "Ecosystem score: 9.6 (holding). Automation coverage now spans daily ops, catalog management, data sync, and ecosystem health."
+      ]
+    },
+    {
+      "date": "2026-02-09",
+      "version": "3.1",
+      "changes": [
+        "V10 AUDIT STRUCTURAL FIXES — 3 agents brought to standard config format.",
+        "Ridgemont Catalog Manager: Added Identity section, Behavior Guidelines, Related Agents table. Bumped to v5.5. Health 9.6→9.8.",
+        "Suno Studio: Added Identity section, Related Agents table. Health 9.0→9.2.",
+        "Make Videos: Added centralized Behavior Guidelines section. Health 8.4→8.6.",
+        "REGISTRY INTEGRITY FIX: Synced all agent health scores from changelog trail to agents array — 10 of 11 agents had stale scores.",
+        "Bulk cleanup identified: 32 .DS_Store files, 18 prunable backups, 1 catalog.json.bak, 1 Suno backup (264KB). Blocked by session disk exhaustion — flagged for next session.",
+        "Ecosystem score: 9.5→9.6. All 11 agents now have Identity, Behavior Guidelines, and Related Agents sections."
+      ]
+    },
+    {
+      "date": "2026-02-09",
+      "version": "3.0",
+      "changes": [
+        "DEEP DIVE v2 TIER 3 COMPLETE — All 8 free Tier 3 connectors connected and embedded across 6 agent configs.",
+        "NPI Registry embedded in Dr. Vinnie Boombatz (provider lookup, credential verification). Health 9.0→9.4.",
+        "Notion embedded in Master Agent (ecosystem knowledge base, project coordination). Health 9.2→9.4.",
+        "Zapier embedded in Master Agent (workflow automation, cross-agent event routing). Health 9.4→9.6.",
+        "Figma embedded in RSW + Frozen Cloud Website (design system management, brand consistency). RSW 8.6→9.0, FCW 7.4→7.8.",
+        "Amplitude embedded in frozen-cloud-portal + RSW (user analytics, behavior tracking). Portal 7.8→8.2, RSW 9.0→9.2.",
+        "MotherDuck embedded in frozen-cloud-portal + Catalog Manager (natural language SQL over catalog data). Portal 8.2→8.6, CM 9.2→9.4.",
+        "Stripe + PayPal embedded in RSW + Catalog Manager (sync licensing payment processing). RSW 9.2→9.4, CM 9.4→9.6.",
+        "Total connector inventory: 4 OAuth + 25 MCP = 29 connectors connected and embedded.",
+        "DEEP DIVE v2 FULLY COMPLETE — Tier 1 (100%), Tier 2 (100%), Tier 3 (100%). All three tiers verified.",
+        "Ecosystem score: 9.2→9.5. All-time high."
+      ]
+    },
+    {
+      "date": "2026-02-09",
+      "version": "2.9",
+      "changes": [
+        "TIER 2 AUDIT + GAP FIX — verified all Tier 2 items against actual agent configs. Found 5 gaps, all fixed.",
+        "Tier 2 compliance: 79% → 100%. All 2A connectors embedded, all 2B skill refs verified, all 2C cross-agent integrations confirmed.",
+        "Ecosystem score: 8.9→9.2."
+      ]
+    },
+    {
+      "date": "2026-02-08",
+      "version": "2.8",
+      "changes": ["Deep Dive v2 Tier 3 connectors surfaced — 12 strategic connectors across 5 categories."]
+    },
+    {
+      "date": "2026-02-08",
+      "version": "2.7",
+      "changes": ["Deep Dive v2 Tier 2 COMPLETE — 6 connectors surfaced, 6 skill refs embedded, 1 RULES.md created."]
+    },
+    {
+      "date": "2026-02-08",
+      "version": "2.6",
+      "changes": ["Deep Dive v2 Tier 1 COMPLETE — 8 skill refs embedded, 4 custom skills built, 2 connectors surfaced."]
+    },
+    {
+      "date": "2026-02-08",
+      "version": "2.5",
+      "changes": ["All 5 Tier 1 connectors installed via browser automation."]
+    },
+    {
+      "date": "2026-02-08",
+      "version": "2.4",
+      "changes": ["Tier 1 deep dive — 5 MCP connectors surfaced, 2 agent configs updated, audit shortcut created."]
+    },
+    {
+      "date": "2026-02-08",
+      "version": "2.3",
+      "changes": ["v9 clean-bill audit — ecosystem 8.3/10. Zero temp files."]
+    },
+    {
+      "date": "2026-02-08",
+      "version": "2.0-2.2",
+      "changes": ["v7-v8 audits — ecosystem crossed 8.0 milestone. All remediation cycles complete."]
+    },
+    {
+      "date": "2026-02-08",
+      "version": "1.0-1.9",
+      "changes": ["Initial discovery through v6 audit. 13→11 agents (2 merges). CourtListener configured. All structural cleanup complete."]
+    }
+  ],
+  "agents": [
+    {
+      "id": "agent_01",
+      "name": "Frozen Cloud Website",
+      "folder_name": "Frozen Cloud Website",
+      "folder_path": "/Users/johnyork/My Drive/Ridgemont Studio/Claude Cowork/Frozen Cloud Website",
+      "purpose": "Static HTML landing page for Frozen Cloud music artist — showcases releases, videos, sync licensing contact, and press kit.",
+      "primary_workflows": ["website_maintenance"],
+      "key_data_files": ["index.html", "RULES.md", "FrozenCloud_02.jpg"],
+      "rules_file": "RULES.md",
+      "skills": [],
+      "connectors": ["Cloudflare", "Ahrefs", "Canva", "Figma"],
+      "dependencies": ["Google Fonts API", "Cloudflare"],
+      "related_agents": ["Ridgemont Studio Website", "frozen-cloud-portal", "Ridgemont Catalog Manager"],
+      "usage_frequency": "rare",
+      "last_modified": "2026-02-09",
+      "status": "active",
+      "health_score": 7.8,
+      "notes": "Tier 3 complete: Cloudflare + Ahrefs + Canva + Figma embedded in RULES.md."
+    },
+    {
+      "id": "agent_02",
+      "name": "Make Videos",
+      "folder_name": "Make Videos",
+      "folder_path": "/Users/johnyork/My Drive/Ridgemont Studio/Claude Cowork/Make Videos",
+      "purpose": "Full-stack automated video production pipeline. Transforms 121+ song catalog across 21 genres into branded visual content featuring Weeter & Blubby characters. 6-step pipeline: Ingestion → Preflight → Analysis → Creation → Assembly → Cataloging. Produces 7 output formats per song with resolution-aware vertical strategy, hash-based idempotency, and Social UI Safe Zone enforcement.",
+      "primary_workflows": ["video_production_pipeline", "batch_produce", "artist_profile_management", "quality_validation"],
+      "key_data_files": ["RULES.md", "data/genre_visual_map.json", "data/genre_profile_templates.json", "data/mood_map.json", "data/genre_defaults.json", "workflows/video-production-pipeline.md", "catalog/progress_log.json", "video_tech_audit_feb2026.md"],
+      "rules_file": "RULES.md",
+      "skills": ["batch-ffmpeg-processor", "beat-sync-editor", "thumbnail-generator", "format-converter", "lyric-overlay", "audio-analyzer", "comfyui-launcher", "artist-profile-manager", "character-asset-factory", "mood-mapper", "meme-sign-generator", "character-animator", "safe-zone-validator", "baseline-recipe-builder", "render-signature-manager"],
+      "connectors": ["Cloudinary"],
+      "dependencies": ["ComfyUI", "FFmpeg", "librosa", "MoviePy", "Pillow", "Manim", "pydub"],
+      "related_agents": ["Ridgemont Catalog Manager", "Make-Music", "Suno Studio", "frozen-cloud-portal", "X-Posts"],
+      "usage_frequency": "daily",
+      "last_modified": "2026-02-09",
+      "status": "active",
+      "health_score": 9.8,
+      "notes": "OVERHAUL v3.0: Full-stack pipeline with 15 specialized skills, 13 Python scripts, Weeter & Blubby character integration, 6-step pipeline with hash-based idempotency. Safe Zone enforcement, 121+ song catalog processing, 7 output formats per song."
+    },
+    {
+      "id": "agent_03",
+      "name": "Make-Music",
+      "folder_name": "Make-Music",
+      "folder_path": "/Users/johnyork/My Drive/Ridgemont Studio/Claude Cowork/Make-Music",
+      "purpose": "Songwriting and MIDI composition workspace for acoustic guitar-based ballads — chord sheets, MIDI generation scripts, Logic Pro projects, and Suno prompts.",
+      "primary_workflows": ["midi_generation", "chord_sheet_creation", "suno_prompt_authoring"],
+      "key_data_files": ["RULES.md", "midi_acoustic_guitar_strumming_guide.md"],
+      "rules_file": "RULES.md",
+      "skills": [],
+      "connectors": ["Melon"],
+      "dependencies": ["Logic Pro", "Python midiutil", "Suno.com"],
+      "related_agents": ["Suno Studio", "Ridgemont Catalog Manager"],
+      "usage_frequency": "weekly",
+      "last_modified": "2026-02-09",
+      "status": "active",
+      "health_score": 7.6,
+      "notes": "Melon music charts embedded for production direction. Tests/ directory clean."
+    },
+    {
+      "id": "agent_04",
+      "name": "Ridgemont Catalog Manager",
+      "folder_name": "Ridgemont Catalog Manager",
+      "folder_path": "/Users/johnyork/My Drive/Ridgemont Studio/Claude Cowork/Ridgemont Catalog Manager",
+      "purpose": "Central operational engine for Ridgemont Studio's 98-song music catalog spanning three acts — manages song metadata, financials, pitching, deployment tracking, and shortcode automation.",
+      "primary_workflows": ["catalog_management", "pitch_generation", "revenue_tracking", "expense_logging", "deployment_tracking"],
+      "key_data_files": ["data/catalog.json", "data/artists.json", "docs/SYSTEM_PROMPT_V5.md", "scripts/catalog_manager.py"],
+      "rules_file": "docs/SYSTEM_PROMPT_V5.md",
+      "skills": ["catalog-sync"],
+      "connectors": ["Melon", "MotherDuck", "Stripe", "PayPal"],
+      "dependencies": ["Streamlit", "Pandas", "Cloudflare R2", "GitHub"],
+      "related_agents": ["frozen-cloud-portal", "Ridgemont Studio Website", "Frozen Cloud Website", "Make-Music"],
+      "usage_frequency": "daily",
+      "last_modified": "2026-02-09",
+      "status": "active",
+      "health_score": 9.8,
+      "notes": "v10 fix: Identity + Behavior Guidelines + Related Agents sections added. Version 5.5. Full connector stack: Melon + MotherDuck + Stripe + PayPal."
+    },
+    {
+      "id": "agent_05",
+      "name": "Ridgemont Studio Website",
+      "folder_name": "Ridgemont Studio Website",
+      "folder_path": "/Users/johnyork/My Drive/Ridgemont Studio/Claude Cowork/Ridgemont Studio Website",
+      "purpose": "Music label website and platform — artist roster, authenticated music streaming via Cloudflare Workers, Firebase auth, sync licensing marketplace.",
+      "primary_workflows": ["website_maintenance", "artist_portal_management", "music_streaming", "sync_licensing"],
+      "key_data_files": ["RULES.md", "index.html", "worker.js", "tracks.json", "sync-music.sh"],
+      "rules_file": "RULES.md",
+      "skills": [],
+      "connectors": ["Cloudflare", "Cloudinary", "Canva", "Ahrefs", "Figma", "Amplitude", "Stripe", "PayPal"],
+      "dependencies": ["Firebase SDK", "Cloudflare Workers", "Cloudflare R2"],
+      "related_agents": ["Frozen Cloud Website", "Ridgemont Catalog Manager"],
+      "usage_frequency": "occasional",
+      "last_modified": "2026-02-09",
+      "status": "active",
+      "health_score": 9.4,
+      "notes": "Most connected agent — 8 MCP connectors embedded. Full design + analytics + payments stack."
+    },
+    {
+      "id": "agent_06",
+      "name": "Suno Studio",
+      "folder_name": "Suno Studio",
+      "folder_path": "/Users/johnyork/My Drive/Ridgemont Studio/Claude Cowork/Suno Studio",
+      "purpose": "Suno v5.0 AI music prompt generator — deterministic prompt generation with 4-engine architecture, 122 subgenres, 1228 tags, 1223 instruments, and 9 presets.",
+      "primary_workflows": ["prompt_generation", "schema_validation", "groove_enhancement", "training_reference"],
+      "key_data_files": ["CLAUDE_INSTRUCTIONS.md", "assets/subgenre_tags.json", "assets/subgenres.json", "assets/instruments.json", "scripts/generate_prompt.py"],
+      "rules_file": "CLAUDE_INSTRUCTIONS.md",
+      "skills": ["suno-prompt-generator"],
+      "connectors": [],
+      "dependencies": ["Python"],
+      "related_agents": ["Make-Music", "Ridgemont Catalog Manager"],
+      "usage_frequency": "weekly",
+      "last_modified": "2026-02-09",
+      "status": "active",
+      "health_score": 9.2,
+      "notes": "v10 fix: Identity + Related Agents sections added. Create-shortcut skill ref for workflow automation."
+    },
+    {
+      "id": "agent_07",
+      "name": "Bajan Sun Website",
+      "folder_name": "Bajan Sun Website",
+      "folder_path": "/Users/johnyork/My Drive/Ridgemont Studio/Claude Cowork/Bajan Sun Website",
+      "purpose": "Web presence for Bajan Sun Publishing (Act 3) — artist landing page, content strategy, brand development.",
+      "primary_workflows": ["website_maintenance", "content_strategy"],
+      "key_data_files": ["RULES.md"],
+      "rules_file": "RULES.md",
+      "skills": [],
+      "connectors": [],
+      "dependencies": [],
+      "related_agents": ["Ridgemont Studio Website"],
+      "usage_frequency": "occasional",
+      "last_modified": "2026-02-08",
+      "status": "active",
+      "health_score": 7.4,
+      "notes": "Minimal connector needs. Content + brand voice focused."
+    },
+    {
+      "id": "agent_08",
+      "name": "Park Bellevue Website",
+      "folder_name": "Park Bellevue Website",
+      "folder_path": "/Users/johnyork/My Drive/Ridgemont Studio/Claude Cowork/Park Bellevue Website",
+      "purpose": "Web presence for Park Bellevue Collective (Act 2) — artist landing page, community engagement, content strategy.",
+      "primary_workflows": ["website_maintenance", "content_strategy"],
+      "key_data_files": ["RULES.md"],
+      "rules_file": "RULES.md",
+      "skills": [],
+      "connectors": [],
+      "dependencies": [],
+      "related_agents": ["Ridgemont Studio Website"],
+      "usage_frequency": "weekly",
+      "last_modified": "2026-02-08",
+      "status": "active",
+      "health_score": 8.0,
+      "notes": "Good foundational health. Content focused."
+    },
+    {
+      "id": "agent_09",
+      "name": "X-Posts",
+      "folder_name": "X-Posts",
+      "folder_path": "/Users/johnyork/My Drive/Ridgemont Studio/Claude Cowork/X-Posts",
+      "purpose": "Daily crypto/blockchain X posting for @4_Bchainbasics — 3-5 posts daily with character mascots (Weeter & Blubby), deadpan voice styling, humanization algorithms, and approval workflow.",
+      "primary_workflows": ["daily_post_generation", "quote_post_creation", "image_generation", "post_scheduling"],
+      "key_data_files": ["x_daily_post_shortcut.md", "x_post_history.md", "CLAUDE.md", "humanization_settings.md"],
+      "rules_file": "CLAUDE.md",
+      "skills": ["x-voice", "x-images"],
+      "connectors": ["Canva", "Ahrefs"],
+      "dependencies": ["X API MCP", "Claude in Chrome", "WebSearch"],
+      "related_agents": ["Make Videos"],
+      "usage_frequency": "daily",
+      "last_modified": "2026-02-09",
+      "status": "active",
+      "health_score": 9.2,
+      "notes": "Canva + Ahrefs embedded for design + SEO. Enterprise-search skill ref for cross-source research. Daily active usage."
+    },
+    {
+      "id": "agent_10",
+      "name": "Ridgemont Catalog Portal",
+      "folder_name": "frozen-cloud-portal",
+      "folder_path": "/Users/johnyork/My Drive/Ridgemont Studio/Claude Cowork/frozen-cloud-portal",
+      "purpose": "Unified read-only Streamlit catalog portal for all 3 acts — dashboard, catalog browsing, deployment tracking, and financials.",
+      "primary_workflows": ["catalog_browsing", "deployment_tracking", "financial_review"],
+      "key_data_files": ["app.py", "RULES.md", "data/catalog.json"],
+      "rules_file": "RULES.md",
+      "skills": [],
+      "connectors": ["MotherDuck", "Amplitude"],
+      "dependencies": ["Streamlit", "Pandas"],
+      "related_agents": ["Ridgemont Catalog Manager"],
+      "usage_frequency": "occasional",
+      "last_modified": "2026-02-09",
+      "status": "active",
+      "health_score": 8.6,
+      "notes": "MotherDuck SQL + Amplitude analytics embedded. Catalog-sync + xlsx skill refs active."
+    },
+    {
+      "id": "agent_11",
+      "name": "Dewey Cheatem, Esq.",
+      "folder_name": "dewey-cheatem-esq",
+      "folder_path": "/Users/johnyork/My Drive/Ridgemont Studio/Claude Cowork/dewey-cheatem-esq",
+      "purpose": "Legal research and advisory agent for U.S. Federal, California, and Idaho law — case law research via CourtListener, statute lookup, contract review, IRAC analysis. NOT a licensed attorney.",
+      "primary_workflows": ["case_law_research", "statute_lookup", "contract_review", "citation_verification", "legal_memo_drafting"],
+      "key_data_files": ["CLAUDE.md", "CONNECTORS.md", "free-legal-sources.md"],
+      "rules_file": "CLAUDE.md",
+      "skills": ["legal-memo"],
+      "connectors": ["Consensus", "Scholar Gateway"],
+      "dependencies": ["CourtListener REST API", "Web Search", "Google Drive"],
+      "related_agents": [],
+      "usage_frequency": "weekly",
+      "last_modified": "2026-02-09",
+      "status": "active",
+      "health_score": 9.2,
+      "notes": "Consensus + Scholar Gateway embedded for academic legal research. Legal-memo + pdf skills active."
+    },
+    {
+      "id": "agent_12",
+      "name": "Dr. Vinnie Boombatz",
+      "folder_name": "dr-vinnie-boombatz",
+      "folder_path": "/Users/johnyork/My Drive/Ridgemont Studio/Claude Cowork/dr-vinnie-boombatz",
+      "purpose": "Comprehensive medical AI agent — evidence-based medical information, research synthesis, drug lookups, lab interpretation, differential diagnosis. Uses PubMed, ChEMBL, Clinical Trials, and 8 other research tools. NOT a licensed physician.",
+      "primary_workflows": ["medical_research", "drug_lookup", "differential_diagnosis", "lab_interpretation", "patient_education"],
+      "key_data_files": ["CLAUDE.md", "README.md", ".mcp.json", "agents/medical-researcher.md"],
+      "rules_file": "CLAUDE.md",
+      "skills": ["clinical-diagnosis", "pharmacology", "medical-research", "ai-medical-advances", "patient-education", "emergency-medicine", "lab-interpretation", "medical-imaging", "preventive-medicine", "mental-health"],
+      "connectors": ["PubMed", "ChEMBL", "Clinical Trials", "bioRxiv", "ICD-10", "Consensus", "Scholar Gateway", "NPI Registry"],
+      "dependencies": ["PubMed MCP", "Web Search", "Google Drive"],
+      "related_agents": [],
+      "usage_frequency": "occasional",
+      "last_modified": "2026-02-09",
+      "status": "active",
+      "health_score": 9.4,
+      "notes": "Most research-connected agent — 8 specialized connectors + 11-tool research workflow embedded. NPI Registry for provider lookup."
+    },
+    {
+      "id": "agent_13",
+      "name": "Master Agent",
+      "folder_name": "Master Agent",
+      "folder_path": "/Users/johnyork/My Drive/Ridgemont Studio/Claude Cowork/Master Agent",
+      "purpose": "Orchestrator and strategic advisor — auto-discovers agents, maintains registry, runs audits with health scoring, cross-agent analysis and optimization.",
+      "primary_workflows": ["agent_discovery", "daily_audit", "health_scoring", "merge_split_recommendations", "new_agent_onboarding"],
+      "key_data_files": ["RULES.md", "agent_registry.json", "evaluation_criteria.md", "audit_template.md", "last_audit.json"],
+      "rules_file": "RULES.md",
+      "skills": ["enterprise-search", "skill-creator"],
+      "connectors": ["Notion", "Zapier"],
+      "dependencies": ["All agent folders"],
+      "related_agents": [],
+      "usage_frequency": "daily",
+      "last_modified": "2026-02-09",
+      "status": "active",
+      "health_score": 9.6,
+      "notes": "Notion + Zapier embedded for ecosystem knowledge base + workflow automation. xlsx + enterprise-search + skill-creator refs active."
+    }
+  ]
+}

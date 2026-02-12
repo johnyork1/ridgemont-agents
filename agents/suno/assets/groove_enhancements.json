@@ -1,0 +1,519 @@
+{
+  "metadata": {
+    "generated_date": "2026-01-23",
+    "description": "Enhanced Groove descriptors for Suno Studio based on real-time research",
+    "total_new_entries": 52,
+    "categories": {
+      "general_global": 18,
+      "subgenre_specific": 34
+    }
+  },
+  "general_groove_descriptors": [
+    {
+      "subgenre_id": null,
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Pocket",
+      "phrase": "deep pocket",
+      "weight": 2,
+      "global": true,
+      "notes": "Consistent, locked-in groove where beat placement remains constant"
+    },
+    {
+      "subgenre_id": null,
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Pocket",
+      "phrase": "behind the beat",
+      "weight": 2,
+      "global": true,
+      "notes": "Laid-back feel with slightly delayed hits creating relaxed groove"
+    },
+    {
+      "subgenre_id": null,
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Pocket",
+      "phrase": "ahead of the beat",
+      "weight": 2,
+      "global": true,
+      "notes": "Driving, urgent feel with slightly early hits creating forward momentum"
+    },
+    {
+      "subgenre_id": null,
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Pocket",
+      "phrase": "tight pocket",
+      "weight": 2,
+      "global": true,
+      "notes": "Precise, locked-in timing with minimal deviation"
+    },
+    {
+      "subgenre_id": null,
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Pocket",
+      "phrase": "loose groove",
+      "weight": 2,
+      "global": true,
+      "notes": "Human-like flow with subtle timing variations that still resolve on the one"
+    },
+    {
+      "subgenre_id": null,
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Subdivision",
+      "phrase": "swung feel",
+      "weight": 2,
+      "global": true,
+      "notes": "Unequal subdivision creating swing rhythm - Suno v5 tested"
+    },
+    {
+      "subgenre_id": null,
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Subdivision",
+      "phrase": "triplet feel",
+      "weight": 2,
+      "global": true,
+      "notes": "Three-note groupings over the beat creating bounce"
+    },
+    {
+      "subgenre_id": null,
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Subdivision",
+      "phrase": "straight 4/4",
+      "weight": 1,
+      "global": true,
+      "notes": "Even, metronomic subdivision without swing"
+    },
+    {
+      "subgenre_id": null,
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Syncopation",
+      "phrase": "syncopated rhythm",
+      "weight": 3,
+      "global": true,
+      "notes": "Off-beat accents creating tension and forward motion - Suno v5 meta object"
+    },
+    {
+      "subgenre_id": null,
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Texture",
+      "phrase": "ghost notes",
+      "weight": 2,
+      "global": true,
+      "notes": "Quiet incidental notes between main beats adding texture and locomotion"
+    },
+    {
+      "subgenre_id": null,
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Timing",
+      "phrase": "half-time feel",
+      "weight": 2,
+      "global": true,
+      "notes": "Snare on beat 3 instead of 2 and 4, cutting tempo feel in half"
+    },
+    {
+      "subgenre_id": null,
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Timing",
+      "phrase": "double-time feel",
+      "weight": 2,
+      "global": true,
+      "notes": "Snare on all offbeats, doubling the sense of tempo"
+    },
+    {
+      "subgenre_id": null,
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Complexity",
+      "phrase": "polyrhythmic",
+      "weight": 3,
+      "global": true,
+      "notes": "Multiple rhythmic patterns layered simultaneously - use with Afrobeat, jazz"
+    },
+    {
+      "subgenre_id": null,
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Complexity",
+      "phrase": "odd time signature",
+      "weight": 2,
+      "global": true,
+      "notes": "Non-4/4 meters like 5/4, 7/8 - use with prog rock, jazz"
+    },
+    {
+      "subgenre_id": null,
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Pattern",
+      "phrase": "backbeat on 2 and 4",
+      "weight": 1,
+      "global": true,
+      "notes": "Standard rock/pop snare placement"
+    },
+    {
+      "subgenre_id": null,
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Feel",
+      "phrase": "live feel",
+      "weight": 2,
+      "global": true,
+      "notes": "Human-sounding drums with natural variation"
+    },
+    {
+      "subgenre_id": null,
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Feel",
+      "phrase": "machine-like precision",
+      "weight": 2,
+      "global": true,
+      "notes": "Electronic, quantized drum feel"
+    },
+    {
+      "subgenre_id": null,
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Dynamics",
+      "phrase": "push-pull dynamics",
+      "weight": 2,
+      "global": true,
+      "notes": "Tension created by varying beat placement around the pulse"
+    }
+  ],
+  "subgenre_specific_groove_descriptors": [
+    {
+      "subgenre_id": "SG0020",
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "HiHat",
+      "phrase": "rapid hi-hat rolls",
+      "weight": 3,
+      "notes": "Signature trap 32nd-note hi-hat patterns"
+    },
+    {
+      "subgenre_id": "SG0020",
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "HiHat",
+      "phrase": "triplet hi-hats",
+      "weight": 2,
+      "notes": "Bouncy trap triplet patterns"
+    },
+    {
+      "subgenre_id": "SG0021",
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Core",
+      "phrase": "boom bap swing",
+      "weight": 3,
+      "notes": "Golden-age hip hop swing quantization with head-nod groove"
+    },
+    {
+      "subgenre_id": "SG0021",
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Pattern",
+      "phrase": "sneaky kick and snare",
+      "weight": 2,
+      "notes": "Unexpected drum hits characteristic of boom bap"
+    },
+    {
+      "subgenre_id": "SG0025",
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Pattern",
+      "phrase": "scattered hi-hats",
+      "weight": 2,
+      "notes": "Unpredictable drill hi-hat patterns"
+    },
+    {
+      "subgenre_id": "SG0025",
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Pattern",
+      "phrase": "snare on 3 and 8",
+      "weight": 2,
+      "notes": "Characteristic UK drill snare placement"
+    },
+    {
+      "subgenre_id": "SG0025",
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Feel",
+      "phrase": "off-kilter bounce",
+      "weight": 2,
+      "notes": "Drill's signature tension-creating rhythm"
+    },
+    {
+      "subgenre_id": "SG0034",
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Core",
+      "phrase": "four on the floor kick",
+      "weight": 3,
+      "notes": "Essential house beat with kick on every quarter note"
+    },
+    {
+      "subgenre_id": "SG0034",
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Pattern",
+      "phrase": "offbeat hi-hats",
+      "weight": 2,
+      "notes": "Classic house hi-hat on upbeats"
+    },
+    {
+      "subgenre_id": "SG0037",
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Core",
+      "phrase": "breakbeat drums",
+      "weight": 3,
+      "notes": "Chopped funk break samples at high tempo - DnB essential"
+    },
+    {
+      "subgenre_id": "SG0037",
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Pattern",
+      "phrase": "2-step rhythm",
+      "weight": 2,
+      "notes": "DnB snare on 2nd and 4th eighth notes pattern"
+    },
+    {
+      "subgenre_id": "SG0037",
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Pattern",
+      "phrase": "amen break",
+      "weight": 3,
+      "notes": "Most iconic DnB drum break pattern"
+    },
+    {
+      "subgenre_id": "SG0052",
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Core",
+      "phrase": "bebop swing",
+      "weight": 3,
+      "notes": "Fast, triplet-based ride cymbal pattern"
+    },
+    {
+      "subgenre_id": "SG0052",
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Pattern",
+      "phrase": "dropping bombs",
+      "weight": 2,
+      "notes": "Unexpected bass drum accents under ride pattern"
+    },
+    {
+      "subgenre_id": "SG0055",
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Core",
+      "phrase": "big band swing",
+      "weight": 3,
+      "notes": "Classic swing-era triplet feel"
+    },
+    {
+      "subgenre_id": "SG0055",
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Pattern",
+      "phrase": "hi-hat on 2 and 4",
+      "weight": 2,
+      "notes": "Essential jazz backbeat feel"
+    },
+    {
+      "subgenre_id": "SG0056",
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Core",
+      "phrase": "clave pattern",
+      "weight": 3,
+      "notes": "Foundational Afro-Cuban 5-stroke rhythmic pattern"
+    },
+    {
+      "subgenre_id": "SG0056",
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Pattern",
+      "phrase": "montuno groove",
+      "weight": 2,
+      "notes": "Syncopated repeating pattern locked to clave"
+    },
+    {
+      "subgenre_id": "SG0071",
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Core",
+      "phrase": "one drop rhythm",
+      "weight": 3,
+      "notes": "Kick and snare on beat 3, beat 1 dropped - signature reggae"
+    },
+    {
+      "subgenre_id": "SG0071",
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Pattern",
+      "phrase": "skank guitar upbeats",
+      "weight": 2,
+      "notes": "Reggae upbeat guitar stabs creating forward motion"
+    },
+    {
+      "subgenre_id": "SG0072",
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Core",
+      "phrase": "riddim groove",
+      "weight": 3,
+      "notes": "Dancehall's repeating bass and drum pattern"
+    },
+    {
+      "subgenre_id": "SG0072",
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Pattern",
+      "phrase": "dembow pattern",
+      "weight": 2,
+      "notes": "Distinctive dancehall/reggaeton kick-snare pattern"
+    },
+    {
+      "subgenre_id": "SG0076",
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Core",
+      "phrase": "son clave",
+      "weight": 3,
+      "notes": "2-3 or 3-2 Cuban clave foundation"
+    },
+    {
+      "subgenre_id": "SG0076",
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Pattern",
+      "phrase": "tumbao bass pattern",
+      "weight": 2,
+      "notes": "Syncopated bass pattern accenting and-of-2 and beat 4"
+    },
+    {
+      "subgenre_id": "SG0078",
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Core",
+      "phrase": "bossa nova clave",
+      "weight": 3,
+      "notes": "Brazilian variation with delayed final note"
+    },
+    {
+      "subgenre_id": "SG0078",
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Pattern",
+      "phrase": "gentle samba pulse",
+      "weight": 2,
+      "notes": "Subtle surdo-like kick accent on beat 3"
+    },
+    {
+      "subgenre_id": "SG0096",
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Core",
+      "phrase": "funk syncopation",
+      "weight": 3,
+      "notes": "Heavy emphasis on 1 with syncopated kicks and ghost notes"
+    },
+    {
+      "subgenre_id": "SG0096",
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Pattern",
+      "phrase": "offbeat kicks",
+      "weight": 2,
+      "notes": "Signature funk bass drum on unexpected beats"
+    },
+    {
+      "subgenre_id": "SG0102",
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Core",
+      "phrase": "afrobeat polyrhythm",
+      "weight": 3,
+      "notes": "Layered interlocking rhythms with clave foundation"
+    },
+    {
+      "subgenre_id": "SG0102",
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Pattern",
+      "phrase": "tony allen groove",
+      "weight": 2,
+      "notes": "Signature sparse but propulsive afrobeat drumming style"
+    },
+    {
+      "subgenre_id": "SG0045",
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Core",
+      "phrase": "train beat",
+      "weight": 3,
+      "notes": "16th-note snare pattern with kick on 1 and 2 - country staple"
+    },
+    {
+      "subgenre_id": "SG0048",
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Core",
+      "phrase": "honky tonk shuffle",
+      "weight": 3,
+      "notes": "Bouncy swung triplets with bass on 1 and 3"
+    },
+    {
+      "subgenre_id": "SG0048",
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Pattern",
+      "phrase": "two-step groove",
+      "weight": 2,
+      "notes": "Classic country dance rhythm"
+    },
+    {
+      "subgenre_id": "SG0018",
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Core",
+      "phrase": "12/8 blues shuffle",
+      "weight": 3,
+      "notes": "Triplet-based shuffle feel in compound meter"
+    },
+    {
+      "subgenre_id": "SG0018",
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Pattern",
+      "phrase": "slow blues drag",
+      "weight": 2,
+      "notes": "Behind-the-beat feel with heavy swing"
+    },
+    {
+      "subgenre_id": "SG0011",
+      "engine": "Groove",
+      "tag_type": "Include",
+      "tag_category": "Core",
+      "phrase": "half-time shuffle",
+      "weight": 3,
+      "notes": "Rosanna/Fool in the Rain style - snare on 3, ghost notes throughout"
+    }
+  ]
+}

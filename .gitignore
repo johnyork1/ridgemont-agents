@@ -1,7 +1,13 @@
 # Python
 .venv/
+venv/
 __pycache__/
 *.pyc
+.pip_packages/
+.pip_tmp/
+
+# Node
+node_modules/
 
 # macOS
 .DS_Store
@@ -19,3 +25,9 @@ catalog/
 
 # Output (generated files)
 output/
+
+# Cloudflare
+.wrangler/
+
+# Environment secrets
+.env

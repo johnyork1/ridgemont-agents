@@ -1,0 +1,10 @@
+{
+  "name": "dewey-cheatem-esq",
+  "version": "1.0.0",
+  "description": "Comprehensive legal research and advisory agent for U.S. federal, California, and Idaho law. Provides case law research via CourtListener, statute lookup, contract review, legal writing, citation verification, and compliance analysis. NOT a substitute for licensed legal counsel.",
+  "author": {
+    "name": "John York / Ridgemont Studio"
+  },
+  "tags": ["legal", "research", "case-law", "contracts", "compliance", "california", "idaho"],
+  "model": "claude-opus-4-6"
+}

@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "x-api": {
+      "command": "npx",
+      "args": ["-y", "@mbelinky/x-mcp-server"],
+      "env": {
+        "API_KEY": "PYPoobu409ZGvtYUYnerTo5hk",
+        "API_SECRET_KEY": "xSpjaSpJ20RLMVPvPpo33iulQbVaQbnLKxTfyi0btuPeimzje2",
+        "ACCESS_TOKEN": "1271208954576531459-hezf3DdveepLXWIjCrZb4h8R95sByc",
+        "ACCESS_TOKEN_SECRET": "55xFAyXHe4EyshZ3nQlG2a4Ikv2jM7yebR6f09e6W63vu"
+      }
+    }
+  }
+}
