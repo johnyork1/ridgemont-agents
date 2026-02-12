@@ -1,21 +1,50 @@
 # Ridgemont Studio — Agent & Script Audit Report
 
-**Date:** 2026-02-12
+**Date:** 2026-02-12 (updated after Cowork migration)
 **Auditor:** Claude Opus 4.6
 **Project root:** `/Users/johnyork/Ridgemont_Studio`
-**Total size:** 2.2 GB (1.5 GB catalog media, 0.7 GB venv + assets + data)
+**Repo:** https://github.com/johnyork1/ridgemont-agents
 
 ---
 
 ## 1. Agent & Script Inventory
 
-### Claude Desktop Agents
+### All Agents (11 + shared skills)
 
-| Agent | Directory | Language | Entrypoint | Inputs | Outputs |
-|-------|-----------|----------|-----------|--------|---------|
-| Dr. Vinnie Boombatz | `agents/vinnie/` | Markdown (Claude plugin) + Python | Open `agents/vinnie/` as project in Claude Desktop | CLAUDE.md, 8 slash commands, 10 skills, PubMed MCP, sub-agents/ | Conversational; `src/generate_report.py` writes `output/vinnie_report.txt` |
-| Make Videos | `agents/make-videos/` | Markdown (Claude Desktop project) | Open `agents/make-videos/` as project in Claude Desktop | CLAUDE.md → delegates to `scripts/` | Pipeline videos in `catalog/` |
-| Suno | `agents/suno/` | Markdown (Claude Desktop project) | Open `agents/suno/` as project in Claude Desktop | CLAUDE.md → delegates to `scripts/generate_prompt.py` | stdout (style prompt) |
+| # | Agent | Directory | Type | Entry Point | MCP |
+|---|-------|-----------|------|-------------|-----|
+| 1 | Dr. Vinnie Boombatz | `agents/vinnie/` | Claude Desktop plugin | `./run.sh` or Claude Desktop | PubMed |
+| 2 | Dewey, Cheatham & Howe | `agents/dewey-cheatham-howe/` | Claude Desktop plugin | `./run.sh` or Claude Desktop | CourtListener |
+| 3 | Make Videos | `agents/make-videos/` | Claude Desktop project | `./run.sh` → `scripts/` | — |
+| 4 | Suno | `agents/suno/` | Claude Desktop project | `./run.sh` or `scripts/generate_prompt.py` | — |
+| 5 | Make Music | `agents/make-music/` | MIDI workspace | `./run.sh` or `generate_getting_old.py` | — |
+| 6 | Master Agent | `agents/master-agent/` | Ecosystem orchestrator | `./run.sh` or `daily_monitor.py` | — |
+| 7 | Catalog Manager | `agents/catalog-manager/` | Catalog database | `./run.sh` or `scripts/catalog_manager.py` | — |
+| 8 | X-Posts | `agents/x-posts/` | Crypto Twitter agent | `./run.sh` or Claude Desktop | — |
+| 9 | Frozen Cloud Website | `agents/frozen-cloud-website/` | Static artist site | `./run.sh` (opens index.html) | — |
+| 10 | Frozen Cloud Portal | `agents/frozen-cloud-portal/` | Streamlit portal | `./run.sh` or `streamlit run app.py` | — |
+| 11 | Ridgemont Studio Website | `agents/ridgemont-website/` | Public label site | `./run.sh` (opens index.html) | — |
+| — | Shared Skills | `agents/.skills/` | Skill library | x-images, x-voice, pushgit | — |
+
+### Migration Source
+
+All agents migrated from `/Users/johnyork/My Drive/Ridgemont Studio/Claude Cowork` on 2026-02-12. Google Drive source is untouched (copy-only migration).
+
+| Cowork Source | Repo Destination | Notes |
+|--------------|-----------------|-------|
+| `dewey-cheatham-howe` | `agents/dewey-cheatham-howe/` | Direct copy |
+| `dr-vinnie-boombatz` | `agents/vinnie/` | Previously migrated from Docker |
+| `Frozen Cloud Website` | `agents/frozen-cloud-website/` | Normalized name |
+| `frozen-cloud-portal` | `agents/frozen-cloud-portal/` | Excluded venv/, .git/ |
+| `Make-Music` | `agents/make-music/` | Normalized name |
+| `Master Agent` | `agents/master-agent/` | Excluded .pip_*, *.mp4 (~80MB), duplicate Make Videos/ removed |
+| `Ridgemont Catalog Manager` | `agents/catalog-manager/` | Excluded node_modules/, venv/, .git/, backups/, .env |
+| `Ridgemont Studio Website` | `agents/ridgemont-website/` | Excluded node_modules/, .git/ |
+| `Suno Studio` | `agents/suno/` | Merged into existing wrapper (assets, references, scripts added) |
+| `X-Posts` | `agents/x-posts/` | Direct copy |
+| `.skills` | `agents/.skills/` | Shared skills (x-images, x-voice, pushgit) |
+| `pushgit.sh` | `scripts/pushgit.sh` | Utility script |
+| `vinnie_integration.sh` | — | Skipped (obsolete Docker migration script) |
 
 ### Make Videos Pipeline (18 scripts)
 
@@ -46,6 +75,7 @@
 |--------|-------|---------|
 | `ingest_catalog.sh` | `analyze_catalog.py` per song | Walk catalog, analyze all songs |
 | `ingest_vinnie.sh` | `.venv/bin/python3 -i` or `--script` | Launch Vinnie Python env |
+| `scripts/pushgit.sh` | git commands | Sync catalog.json across portals |
 
 ---
 
@@ -82,8 +112,8 @@
 | Tool | Version | Used by | Status |
 |------|---------|---------|--------|
 | ffmpeg | 8.0.1 | baseline_master, beat_sync_cuts, lyric_video, visualizer, meme_sign_render, generate_thumbnails, generate_artist_profile, render_pro_video | OK |
-| node | 25.4.0 | (not currently used by any script) | OK |
-| npm | 11.7.0 | (not currently used by any script) | OK |
+| node | 25.4.0 | ridgemont-website (worker.js), catalog-manager | OK |
+| npm | 11.7.0 | ridgemont-website, catalog-manager | OK |
 
 ### Missing packages
 
@@ -132,11 +162,11 @@ Plus `--project-root` argparse override. This means scripts work correctly when 
 
 | Severity | Script | Issue | Status |
 |----------|--------|-------|--------|
-| ~~HIGH~~ | `prep_characters.py` | ~~Hardcoded relative paths — no `--project-root`.~~ | FIXED 2026-02-12: Added `--project-root` arg (default: derived from `__file__`). Paths now resolve relative to project root. |
-| ~~MODERATE~~ | `ingest_song.py` | ~~`mp3_path` positional arg relative to cwd, not project root.~~ | FIXED 2026-02-12: Relative `mp3_path` now resolved against `--project-root`. |
-| ~~MODERATE~~ | `render_pro_video.py` | ~~`--bg` and `--lrc` args relative to cwd, not project root.~~ | FIXED 2026-02-12: Both paths now resolved against `--project-root` when not absolute. |
+| ~~HIGH~~ | `prep_characters.py` | ~~Hardcoded relative paths — no `--project-root`.~~ | FIXED 2026-02-12 |
+| ~~MODERATE~~ | `ingest_song.py` | ~~`mp3_path` positional arg relative to cwd, not project root.~~ | FIXED 2026-02-12 |
+| ~~MODERATE~~ | `render_pro_video.py` | ~~`--bg` and `--lrc` args relative to cwd, not project root.~~ | FIXED 2026-02-12 |
 | LOW | `generate_prompt.py` | Assets path derived from `__file__` parent — works correctly but hardcoded structure assumption (`../assets/`). | Open |
-| ~~LOW~~ | `ingest_vinnie.sh` | ~~No `PYTHONPATH` setup for script mode.~~ | FIXED 2026-02-12: Added `export PYTHONPATH` for `scripts/` before Python invocation. |
+| ~~LOW~~ | `ingest_vinnie.sh` | ~~No `PYTHONPATH` setup for script mode.~~ | FIXED 2026-02-12 |
 
 ### Cross-script import chain
 
@@ -215,64 +245,53 @@ $PY scripts/preflight_validator.py --project-root .
 # Prep character sprites (from raw sheets — works from any directory)
 $PY scripts/prep_characters.py --project-root .
 
-# ── Vinnie Agent ──────────────────────────────────────────
+# ── Agents ────────────────────────────────────────────────
 
-# Generate medical report from patient notes
+# Any agent (run its entrypoint)
+cd agents/<name> && ./run.sh
+
+# Vinnie: generate medical report
 $PY agents/vinnie/src/generate_report.py
 
-# Custom patient dir
+# Vinnie: custom patient dir
 VINNIE_PATIENT_DIR=/path/to/notes $PY agents/vinnie/src/generate_report.py
 
-# Interactive Python with venv
+# Vinnie: interactive Python with venv
 ./ingest_vinnie.sh
 
-# Run a script through Vinnie launcher
-./ingest_vinnie.sh --script agents/vinnie/src/generate_report.py
+# Catalog Manager
+cd agents/catalog-manager && python3 scripts/catalog_manager.py
+
+# Master Agent: daily ecosystem audit
+cd agents/master-agent && python3 daily_monitor.py
+
+# Frozen Cloud Portal
+cd agents/frozen-cloud-portal && streamlit run app.py
+
+# Suno prompt (agent-local copy)
+cd agents/suno && python3 scripts/generate_prompt.py --genre reggae --mood chill
 ```
 
 ---
 
-## 5. Top 10 Fixes (prioritized)
+## 5. Fix History
 
-### ~~1. `prep_characters.py` — Add `--project-root` arg~~ FIXED
-**Impact:** HIGH — script silently fails or writes to wrong location if not run from project root.
-**Fix applied:** Added `argparse` with `--project-root` (default: derived from `__file__`). Input/output paths now resolve relative to project root. Works from any working directory.
-
-### ~~2. `ingest_song.py` — Resolve `mp3_path` relative to project root~~ FIXED
-**Impact:** MODERATE — users passing relative paths from wrong cwd get confusing errors.
-**Fix applied:** Relative `mp3_path` is now resolved against `--project-root` before being passed to the ingestion pipeline.
-
-### ~~3. `render_pro_video.py` — Resolve `--bg` and `--lrc` relative to project root~~ FIXED
-**Impact:** MODERATE — same cwd-relative issue as ingest_song.
-**Fix applied:** Both `--bg` and `--lrc` are now resolved against `--project-root` when not absolute, consistent with how the script resolves all other paths.
-
-### ~~4. `ingest_vinnie.sh` — Add PYTHONPATH for script mode~~ FIXED
-**Impact:** LOW-MODERATE — scripts with local imports would fail in script mode.
-**Fix applied:** Added `export PYTHONPATH="$SCRIPT_DIR/scripts:${PYTHONPATH:-}"` before the Python invocation block. Both interactive and script modes now have `scripts/` on the import path.
-
-### ~~5. Add `CLAUDE.md` at project root for pipeline documentation~~ FIXED
-**Impact:** MODERATE — Claude Desktop needs guidance on how to run the pipeline when working from the project root (not inside `agents/vinnie/`).
-**Fix applied:** Created `CLAUDE.md` at project root documenting: project structure, Python env, full pipeline steps with commands, rendering extras, utilities, Vinnie agent usage, key data files, and shared utilities.
-
-### ~~6. Standardize path handling with a shared utility~~ FIXED
-**Impact:** LOW — current scripts work but use mixed `os.path` / `pathlib.Path`.
-**Fix applied:** Added `resolve_path(path, project_root)` to `cache_utils.py`. Adopted in `ingest_song.py` and `render_pro_video.py` (replacing inline `os.path.isabs` checks). Available for all scripts via `from cache_utils import resolve_path`.
-
-### 7. Add `.venv` to `.claudeignore` exclusions
-**Impact:** LOW — already done in current `.claudeignore`. Verified present.
-**Status:** ALREADY FIXED.
-
-### ~~8. `production_log.csv` — Move to `output/`~~ FIXED
-**Impact:** LOW — previously at project root, cluttered the top-level directory.
-**Fix applied:** Updated `ingest_catalog.sh` and `batch_produce.py` to write `output/production_log.csv`. Moved the existing file into `output/`.
-
-### ~~9. Remove stale `__pycache__/` in `scripts/`~~ FIXED
-**Impact:** COSMETIC — 96 bytes, harmless but untidy.
-**Fix applied:** Deleted during cleanup session 2026-02-12.
-
-### 10. Node.js is installed but unused
-**Impact:** INFORMATIONAL — `node` and `npm` are available via Homebrew but no scripts currently use them. No action needed unless disk space is a concern.
-**Status:** NO ACTION REQUIRED.
+| # | Issue | Severity | Status |
+|---|-------|----------|--------|
+| 1 | `prep_characters.py` — no `--project-root` | HIGH | FIXED 2026-02-12 |
+| 2 | `ingest_song.py` — `mp3_path` relative to cwd | MODERATE | FIXED 2026-02-12 |
+| 3 | `render_pro_video.py` — `--bg`/`--lrc` relative to cwd | MODERATE | FIXED 2026-02-12 |
+| 4 | `ingest_vinnie.sh` — no PYTHONPATH | LOW-MODERATE | FIXED 2026-02-12 |
+| 5 | No root `CLAUDE.md` | MODERATE | FIXED 2026-02-12 |
+| 6 | No shared `resolve_path` utility | LOW | FIXED 2026-02-12 |
+| 7 | `.venv` in `.claudeignore` | LOW | ALREADY FIXED |
+| 8 | `production_log.csv` at root | LOW | FIXED 2026-02-12 |
+| 9 | Stale `__pycache__/` | COSMETIC | FIXED 2026-02-12 |
+| 10 | Node.js unused | INFO | NO ACTION |
+| 11 | Agent restructure (nested agents/, generate_report.py location, docx) | MODERATE | FIXED 2026-02-12 |
+| 12 | Cowork migration (8 new agents, Suno merge, .skills, docs) | MAJOR | FIXED 2026-02-12 |
+| 13 | Master Agent duplicate Make Videos/ (51 files) | LOW | FIXED 2026-02-12 — skills refs preserved in make-videos/docs/ |
+| 14 | Master Agent test artifacts (.writetest, writetest2.txt) | COSMETIC | FIXED 2026-02-12 |
 
 ---
 
@@ -281,12 +300,17 @@ VINNIE_PATIENT_DIR=/path/to/notes $PY agents/vinnie/src/generate_report.py
 | Category | Status |
 |----------|--------|
 | Docker path remnants | CLEAN — none found |
-| Python imports | CLEAN — all 18 scripts import successfully |
+| Python imports | CLEAN — all 18 pipeline scripts import successfully |
 | pip dependency graph | CLEAN — no broken requirements |
-| Required directories | CLEAN — data/, catalog/, assets/, output/ all present |
+| Required directories | CLEAN — data/, catalog/, assets/, output/, agents/, docs/, scripts/ all present |
 | Required assets | CLEAN — all JSON configs and character sprites present |
-| Shell scripts | CLEAN — both call local .venv Python correctly |
+| Shell scripts | CLEAN — all call local .venv Python correctly |
 | MCP config (Vinnie) | CLEAN — PubMed remote server configured |
-| Claude plugin structure | CLEAN — 3 agents (vinnie plugin, make-videos project, suno project), plugin.json, CLAUDE.md, 8 commands, 10 skills, 1 sub-agent |
+| MCP config (Dewey) | CLEAN — CourtListener API + MCP server |
+| Agent structure | CLEAN — 11 agents under agents/, all with README.md + run.sh |
+| Shared skills | CLEAN — agents/.skills/ with x-images, x-voice, pushgit |
+| Naming convention | CLEAN — all lowercase-hyphenated directory names |
+| .gitignore | CLEAN — covers __pycache__, *.pyc, node_modules/, venv/, .wrangler/, .env, catalog/, output/ |
+| Git repo | CLEAN — pushed to github.com/johnyork1/ridgemont-agents, 0 open PRs |
 
-**Overall assessment:** The project is in excellent health post-migration. 8 of 10 audit items have been fixed. All scripts resolve file path arguments relative to `--project-root` and work from any working directory. A shared `resolve_path` utility standardizes path handling. Root `CLAUDE.md` documents the full pipeline. Production logs now write to `output/`. Only two informational items remain open (generate_prompt asset paths, Node.js unused) — neither requires action.
+**Overall assessment:** The project is fully consolidated. All 11 agents from Claude Cowork are migrated into `agents/` with standardized naming, README.md, and run.sh entry points. The Make Videos pipeline (18 scripts) is clean with `--project-root` support and shared `resolve_path` utility. No duplicates, no Docker remnants, no test artifacts. Full documentation at `docs/AGENTS.md` and `docs/STRUCTURE.md`. 12 of 14 audit items fixed; 2 informational items remain open (generate_prompt asset paths, Node.js availability).
