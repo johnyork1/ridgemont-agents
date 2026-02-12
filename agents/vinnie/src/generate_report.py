@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
 
-BASE_DIR = Path(__file__).resolve().parent.parent.parent  # Ridgemont_Studio/
+BASE_DIR = Path(__file__).resolve().parent.parent.parent.parent  # Ridgemont_Studio/
 PATIENT_DIR = Path(os.environ.get("VINNIE_PATIENT_DIR", BASE_DIR / "data" / "patients"))
 OUTPUT_FILE = Path(os.environ.get("VINNIE_OUTPUT_FILE", BASE_DIR / "output" / "vinnie_report.txt"))
 

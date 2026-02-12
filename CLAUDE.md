@@ -5,10 +5,14 @@ Music production pipeline and AI agent workspace.
 ## Project Structure
 
 ```
-agents/vinnie/       Dr. Vinnie Boombatz medical AI agent (Claude plugin)
+agents/
+  vinnie/            Dr. Vinnie Boombatz medical AI agent (Claude plugin)
+  make-videos/       Make Videos pipeline agent (Claude Desktop project)
+  suno/              Suno prompt generator agent (Claude Desktop project)
 assets/              Character sprites, subgenre/instrument JSON databases
 catalog/             Production catalog — artist/song dirs with manifests + rendered media
 data/                Config JSONs (recipes, mood maps, genre defaults) + raw character sheets
+docs/                Project documentation (AGENTS.md, STRUCTURE.md)
 scripts/             18 Python scripts — core Make Videos pipeline
 output/              Generated reports and production logs
 ```
@@ -84,11 +88,19 @@ Medical AI agent in `agents/vinnie/`. Open that directory as a project in Claude
 
 ```bash
 # Generate medical report from patient notes
-$PY agents/vinnie/generate_report.py
+$PY agents/vinnie/src/generate_report.py
 
 # With custom patient directory
-VINNIE_PATIENT_DIR=/path/to/notes $PY agents/vinnie/generate_report.py
+VINNIE_PATIENT_DIR=/path/to/notes $PY agents/vinnie/src/generate_report.py
 ```
+
+## Make Videos Agent
+
+Video pipeline agent in `agents/make-videos/`. Open that directory as a project in Claude Desktop.
+
+## Suno Agent
+
+Prompt generator agent in `agents/suno/`. Open that directory as a project in Claude Desktop.
 
 ## Key Data Files
 

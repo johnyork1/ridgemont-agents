@@ -9,11 +9,13 @@
 
 ## 1. Agent & Script Inventory
 
-### Claude Desktop Agent
+### Claude Desktop Agents
 
-| Agent | Language | Entrypoint | Inputs | Outputs |
-|-------|----------|-----------|--------|---------|
-| Dr. Vinnie Boombatz | Markdown (Claude plugin) + Python | Open `agents/vinnie/` as project in Claude Desktop | CLAUDE.md, 8 slash commands, 10 skills, PubMed MCP | Conversational; `generate_report.py` writes `output/vinnie_report.txt` |
+| Agent | Directory | Language | Entrypoint | Inputs | Outputs |
+|-------|-----------|----------|-----------|--------|---------|
+| Dr. Vinnie Boombatz | `agents/vinnie/` | Markdown (Claude plugin) + Python | Open `agents/vinnie/` as project in Claude Desktop | CLAUDE.md, 8 slash commands, 10 skills, PubMed MCP, sub-agents/ | Conversational; `src/generate_report.py` writes `output/vinnie_report.txt` |
+| Make Videos | `agents/make-videos/` | Markdown (Claude Desktop project) | Open `agents/make-videos/` as project in Claude Desktop | CLAUDE.md → delegates to `scripts/` | Pipeline videos in `catalog/` |
+| Suno | `agents/suno/` | Markdown (Claude Desktop project) | Open `agents/suno/` as project in Claude Desktop | CLAUDE.md → delegates to `scripts/generate_prompt.py` | stdout (style prompt) |
 
 ### Make Videos Pipeline (18 scripts)
 
@@ -120,7 +122,7 @@ Plus `--project-root` argparse override. This means scripts work correctly when 
 |-------------|---------|-------|
 | `catalog/{artist}/{song}/` | All pipeline scripts (manifests, videos, thumbnails) | Correct — co-located with source media |
 | `catalog/.catalog_cache.json` | cache_utils.py | Correct — catalog-level metadata |
-| `output/vinnie_report.txt` | generate_report.py | Correct — goes to output/ |
+| `output/vinnie_report.txt` | src/generate_report.py | Correct — goes to output/ |
 | `output/production_log.csv` | ingest_catalog.sh, batch_produce.py | Correct — goes to output/ |
 | `assets/characters/` | prep_characters.py | Correct — generates character assets |
 
@@ -216,16 +218,16 @@ $PY scripts/prep_characters.py --project-root .
 # ── Vinnie Agent ──────────────────────────────────────────
 
 # Generate medical report from patient notes
-$PY agents/vinnie/generate_report.py
+$PY agents/vinnie/src/generate_report.py
 
 # Custom patient dir
-VINNIE_PATIENT_DIR=/path/to/notes $PY agents/vinnie/generate_report.py
+VINNIE_PATIENT_DIR=/path/to/notes $PY agents/vinnie/src/generate_report.py
 
 # Interactive Python with venv
 ./ingest_vinnie.sh
 
 # Run a script through Vinnie launcher
-./ingest_vinnie.sh --script agents/vinnie/generate_report.py
+./ingest_vinnie.sh --script agents/vinnie/src/generate_report.py
 ```
 
 ---
@@ -285,6 +287,6 @@ VINNIE_PATIENT_DIR=/path/to/notes $PY agents/vinnie/generate_report.py
 | Required assets | CLEAN — all JSON configs and character sprites present |
 | Shell scripts | CLEAN — both call local .venv Python correctly |
 | MCP config (Vinnie) | CLEAN — PubMed remote server configured |
-| Claude plugin structure | CLEAN — plugin.json, CLAUDE.md, 8 commands, 10 skills |
+| Claude plugin structure | CLEAN — 3 agents (vinnie plugin, make-videos project, suno project), plugin.json, CLAUDE.md, 8 commands, 10 skills, 1 sub-agent |
 
 **Overall assessment:** The project is in excellent health post-migration. 8 of 10 audit items have been fixed. All scripts resolve file path arguments relative to `--project-root` and work from any working directory. A shared `resolve_path` utility standardizes path handling. Root `CLAUDE.md` documents the full pipeline. Production logs now write to `output/`. Only two informational items remain open (generate_prompt asset paths, Node.js unused) — neither requires action.
