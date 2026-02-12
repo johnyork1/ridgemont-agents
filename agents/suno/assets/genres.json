@@ -1,0 +1,146 @@
+[
+  {
+    "genre_id": "G0001",
+    "name": "Pop",
+    "role": "engine",
+    "aliases": "Top 40, Mainstream Pop",
+    "sort_order": 10,
+    "is_active": true,
+    "notes": null
+  },
+  {
+    "genre_id": "G0002",
+    "name": "Rock",
+    "role": "engine",
+    "aliases": "Guitar Rock",
+    "sort_order": 20,
+    "is_active": true,
+    "notes": null
+  },
+  {
+    "genre_id": "G0003",
+    "name": "Hip Hop",
+    "role": "engine",
+    "aliases": "Rap, Urban",
+    "sort_order": 30,
+    "is_active": true,
+    "notes": null
+  },
+  {
+    "genre_id": "G0004",
+    "name": "R&B",
+    "role": "engine",
+    "aliases": "Rhythm and Blues, Soul",
+    "sort_order": 40,
+    "is_active": true,
+    "notes": null
+  },
+  {
+    "genre_id": "G0005",
+    "name": "Electronic",
+    "role": "engine",
+    "aliases": "EDM, Dance",
+    "sort_order": 50,
+    "is_active": true,
+    "notes": null
+  },
+  {
+    "genre_id": "G0006",
+    "name": "Country",
+    "role": "engine",
+    "aliases": "Country Western",
+    "sort_order": 60,
+    "is_active": true,
+    "notes": null
+  },
+  {
+    "genre_id": "G0007",
+    "name": "Jazz",
+    "role": "engine",
+    "aliases": null,
+    "sort_order": 70,
+    "is_active": true,
+    "notes": null
+  },
+  {
+    "genre_id": "G0008",
+    "name": "Blues",
+    "role": "engine",
+    "aliases": null,
+    "sort_order": 80,
+    "is_active": true,
+    "notes": null
+  },
+  {
+    "genre_id": "G0009",
+    "name": "Classical",
+    "role": "engine",
+    "aliases": "Orchestral",
+    "sort_order": 90,
+    "is_active": true,
+    "notes": null
+  },
+  {
+    "genre_id": "G0011",
+    "name": "Reggae",
+    "role": "engine",
+    "aliases": "Roots, Dancehall",
+    "sort_order": 110,
+    "is_active": true,
+    "notes": null
+  },
+  {
+    "genre_id": "G0012",
+    "name": "Latin",
+    "role": "regional_container",
+    "aliases": "Latino, Hispanic",
+    "sort_order": 120,
+    "is_active": true,
+    "notes": "Requires subgenre selection"
+  },
+  {
+    "genre_id": "G0013",
+    "name": "Metal",
+    "role": "engine",
+    "aliases": "Heavy Metal",
+    "sort_order": 130,
+    "is_active": true,
+    "notes": null
+  },
+  {
+    "genre_id": "G0014",
+    "name": "Punk",
+    "role": "engine",
+    "aliases": null,
+    "sort_order": 140,
+    "is_active": true,
+    "notes": null
+  },
+  {
+    "genre_id": "G0015",
+    "name": "Funk",
+    "role": "engine",
+    "aliases": null,
+    "sort_order": 150,
+    "is_active": true,
+    "notes": null
+  },
+  {
+    "genre_id": "G0016",
+    "name": "Gospel",
+    "role": "engine",
+    "aliases": "Christian, Worship",
+    "sort_order": 160,
+    "is_active": true,
+    "notes": null
+  },
+  {
+    "genre_id": "G0017",
+    "name": "World",
+    "role": "regional_container",
+    "aliases": "Global, International",
+    "sort_order": 170,
+    "is_active": true,
+    "notes": "Requires subgenre selection"
+  }
+]

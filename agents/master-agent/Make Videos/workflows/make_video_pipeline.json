@@ -1,0 +1,101 @@
+{
+  "workflow_id": "make_video_pipeline_v3",
+  "name": "Make Video — Full 6-Step Pipeline",
+  "version": "3.0",
+  "description": "Complete video production pipeline from audio ingestion to 7-format output",
+  "steps": [
+    {
+      "step": 0,
+      "name": "Asset Prep",
+      "script": "scripts/prep_characters.py",
+      "skill": "/character-asset-factory",
+      "frequency": "one-time",
+      "description": "Slice and de-background W&B sheets into transparent PNGs"
+    },
+    {
+      "step": 1,
+      "name": "Ingestion",
+      "script": "scripts/ingest_song.py",
+      "skill": "/ingest-song",
+      "args": "--song-id {song_id} --audio {audio_path} --artist \"{artist}\" --title \"{title}\" --genre \"{genre}\" --project-root {project_root}",
+      "description": "Pull audio + metadata, check for Creative Brief"
+    },
+    {
+      "step": 1.5,
+      "name": "Preflight",
+      "integrated_in": "analyze_catalog.py",
+      "description": "Verify all asset paths exist on disk. Abort songs with missing assets."
+    },
+    {
+      "step": 2,
+      "name": "Analysis",
+      "script": "scripts/analyze_catalog.py",
+      "skill": "/audio-analyzer",
+      "args": "--song-id {song_id} --audio {audio_rel_path} --artist \"{artist}\" --genre \"{genre}\" --project-root {project_root}",
+      "description": "BPM, beats, key (confidence), energy. Mood mapping. Preflight validation."
+    },
+    {
+      "step": 3,
+      "name": "Creation",
+      "script": "scripts/baseline_master.py",
+      "skill": "/baseline-recipe-builder",
+      "args": "--song-id {song_id} --artist \"{artist}\" --project-root {project_root}",
+      "description": "Generate master video (Ken Burns + beat pulse + W&B)"
+    },
+    {
+      "step": 4,
+      "name": "Assembly",
+      "script": "scripts/batch_produce.py",
+      "skill": "/batch-ffmpeg-processor",
+      "args": "--song-id {song_id} --artist \"{artist}\" --project-root {project_root}",
+      "description": "Render 7 formats. Blur-fill. Hash idempotency. Safe Zone enforcement."
+    },
+    {
+      "step": 5,
+      "name": "Cataloging",
+      "integrated_in": "batch_produce.py",
+      "description": "Save to catalog/{artist}/{song}/. Write render_signature.txt. Update progress log."
+    }
+  ],
+  "optional_steps": [
+    {
+      "name": "Artist Profile Generation",
+      "script": "scripts/generate_artist_profile.py",
+      "skill": "/artist-profile-manager",
+      "when": "Before first song for new artist"
+    },
+    {
+      "name": "Thumbnail Generation",
+      "script": "scripts/generate_thumbnails.py",
+      "skill": "/thumbnail-generator",
+      "when": "After assembly"
+    },
+    {
+      "name": "Lyric Video",
+      "script": "scripts/lyric_video.py",
+      "skill": "/lyric-overlay",
+      "when": "When lyrics file available"
+    },
+    {
+      "name": "Visualizer",
+      "script": "scripts/visualizer.py",
+      "skill": "/audio-analyzer",
+      "when": "For audio-reactive format"
+    },
+    {
+      "name": "Meme Sign Render",
+      "script": "scripts/meme_sign_render.py",
+      "skill": "/meme-sign-generator",
+      "when": "Called by baseline_master.py"
+    }
+  ],
+  "guardrails": {
+    "blur_fill_required": "1080p sources MUST use blur-fill vertical, never upscale 607px",
+    "safe_zone_required": "All overlays MUST call enforce_safe_zone() before compositing",
+    "hash_idempotency": "SHA256 render signatures prevent unnecessary re-renders",
+    "confidence_valve": "key_confidence < 0.15 OR mode_confidence < 0.10 → genre defaults",
+    "root_relative_paths": "All manifest paths are project-root-relative. No path concatenation.",
+    "preflight_mandatory": "All asset paths verified before FFmpeg runs",
+    "character_dynamics": "Weeter leads, Blubby reacts. Never swap roles."
+  }
+}

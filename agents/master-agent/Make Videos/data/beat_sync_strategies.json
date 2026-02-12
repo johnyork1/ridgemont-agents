@@ -1,0 +1,28 @@
+{
+  "_description": "Format-specific cut strategies for beat_sync_cuts.py",
+  "_version": "1.0",
+  "strategies": {
+    "tiktok": {
+      "max_duration": 60,
+      "strategy": "hook_first",
+      "hook_window": [0.15, 0.40],
+      "fade_out": 1.0
+    },
+    "short": {
+      "max_duration": 59,
+      "strategy": "hook_first",
+      "hook_window": [0.15, 0.40],
+      "fade_out": 1.0
+    },
+    "reel": {
+      "max_duration": 90,
+      "strategy": "best_segment",
+      "fade_out": 1.5
+    },
+    "sync_reel": {
+      "max_duration": 60,
+      "strategy": "energy_peak",
+      "fade_out": 0.5
+    }
+  }
+}

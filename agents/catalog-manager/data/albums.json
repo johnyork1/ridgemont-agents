@@ -1,0 +1,138 @@
+{
+  "albums": [
+    {
+      "album_id": "ALB-0001",
+      "title": "A Time When Men Die",
+      "artist": "Dust & Thunder",
+      "band_id": "DUST__THUNDER",
+      "publisher": "BAJAN_SUN",
+      "tracks": [
+        {
+          "title": "Trouble Bad",
+          "legacy_code": "TRBD"
+        }
+      ],
+      "track_count": 1
+    },
+    {
+      "album_id": "ALB-0002",
+      "title": "Babylon Fever",
+      "artist": "Echoes of Jahara",
+      "band_id": "ECHOES_OF_JAHARA",
+      "publisher": "FROZEN_CLOUD",
+      "tracks": [
+        {
+          "title": "Crazy",
+          "legacy_code": "CRZY"
+        }
+      ],
+      "track_count": 1
+    },
+    {
+      "album_id": "ALB-0003",
+      "title": "Blackout Notes",
+      "artist": "Mercury Halo",
+      "band_id": "MERCURY_HALO",
+      "publisher": "FROZEN_CLOUD",
+      "tracks": [
+        {
+          "title": "Canzonet",
+          "legacy_code": "CANZ"
+        }
+      ],
+      "track_count": 1
+    },
+    {
+      "album_id": "ALB-0004",
+      "title": "Dark Pattern",
+      "artist": "Stone Meridian",
+      "band_id": "STONE_MERIDIAN",
+      "publisher": "FROZEN_CLOUD",
+      "tracks": [
+        {
+          "title": "The Games You Play",
+          "legacy_code": "TGYP"
+        }
+      ],
+      "track_count": 1
+    },
+    {
+      "album_id": "ALB-0005",
+      "title": "Exit Liquidity",
+      "artist": "Phantom Frenzy",
+      "band_id": "PHANTOM_FRENZY",
+      "publisher": "FROZEN_CLOUD",
+      "tracks": [
+        {
+          "title": "Crazy",
+          "legacy_code": "CRZY"
+        }
+      ],
+      "track_count": 1
+    },
+    {
+      "album_id": "ALB-0006",
+      "title": "Mercury in the Margins",
+      "artist": "Thomas Wren",
+      "band_id": "THOMAS_WREN",
+      "publisher": "BAJAN_SUN",
+      "tracks": [
+        {
+          "title": "Better Than Dreams",
+          "legacy_code": "BTDR"
+        }
+      ],
+      "track_count": 1
+    },
+    {
+      "album_id": "ALB-0007",
+      "title": "Mile of Madness",
+      "artist": "Honest Mile",
+      "band_id": "HONEST_MILE",
+      "publisher": "FROZEN_CLOUD",
+      "tracks": [
+        {
+          "title": "Crazy",
+          "legacy_code": "CRZY"
+        },
+        {
+          "title": "Hooked On You",
+          "legacy_code": "HKOY"
+        }
+      ],
+      "track_count": 2
+    },
+    {
+      "album_id": "ALB-0008",
+      "title": "Noche Incendiada",
+      "artist": "Fuego Urbano",
+      "band_id": "FUEGO_URBANO",
+      "publisher": "FROZEN_CLOUD",
+      "tracks": [
+        {
+          "title": "Crazy",
+          "legacy_code": "CRZY"
+        }
+      ],
+      "track_count": 1
+    },
+    {
+      "album_id": "ALB-0009",
+      "title": "Porchlight Cartography",
+      "artist": "Harbor Grey",
+      "band_id": "HARBOR_GREY",
+      "publisher": "BAJAN_SUN",
+      "tracks": [
+        {
+          "title": "Trouble Bad",
+          "legacy_code": "TROB"
+        },
+        {
+          "title": "Rocket to Moon",
+          "legacy_code": "RK2M"
+        }
+      ],
+      "track_count": 2
+    }
+  ]
+}

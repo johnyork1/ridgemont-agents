@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Indie",
+    "role": "modifier",
+    "pairs_with_genre_ids": ["G0001", "G0002", "G0005", "G0006"]
+  },
+  {
+    "name": "Alternative",
+    "role": "modifier",
+    "pairs_with_genre_ids": ["G0002", "G0013", "G0003", "G0004"]
+  },
+  {
+    "name": "Cinematic",
+    "role": "production_modifier",
+    "pairs_with_genre_ids": ["G0009", "G0005"]
+  },
+  {
+    "name": "Lo-fi",
+    "role": "texture",
+    "pairs_with_genre_ids": ["G0003", "G0001", "G0005"]
+  },
+  {
+    "name": "Neo",
+    "role": "modifier",
+    "pairs_with_genre_ids": ["G0004", "G0009", "G0007"]
+  },
+  {
+    "name": "Post",
+    "role": "modifier",
+    "pairs_with_genre_ids": ["G0014", "G0002", "G0013"]
+  }
+]

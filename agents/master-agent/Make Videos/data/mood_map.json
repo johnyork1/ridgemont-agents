@@ -1,0 +1,104 @@
+{
+  "_schema_version": "1.0",
+  "_character_dynamics": {
+    "weeter": {
+      "role": "The Leader / Hype Man",
+      "species": "Brown Bear",
+      "traits": "confident, loud, protective, initiates action, bigger presence",
+      "pose_bias": "megaphone, rocket, money_bag, flexing, pointing, sunglasses",
+      "note": "Weeter LEADS. He initiates, announces, takes action."
+    },
+    "blubby": {
+      "role": "The Reactor / Sidekick",
+      "species": "Yellow-Green Alien",
+      "traits": "curious, emotional, surprised, follows Weeter's lead, smaller presence",
+      "pose_bias": "mind_blown, magnifying_glass, scared, stars, thinking, peeking",
+      "note": "Blubby REACTS. He responds to what Weeter does or what the music does."
+    },
+    "together": {
+      "dynamic": "Classic big guy / little guy comedy duo. Weeter leads (left, larger), Blubby reacts (right, smaller).",
+      "note": "NEVER assign Blubby a leadership pose or Weeter a pure reaction pose unless Creative Brief explicitly overrides."
+    }
+  },
+  "rules": [
+    {
+      "condition": "bpm > 140 AND major_key",
+      "mood": "hype",
+      "weeter_pose": "assets/characters/weeter/hype/rocket_ship.png",
+      "weeter_role": "leading the charge",
+      "blubby_pose": "assets/characters/blubby/hype/mind_blown.png",
+      "blubby_role": "amazed reaction",
+      "together_pose": "assets/characters/together/hype/rocket_duo.png"
+    },
+    {
+      "condition": "bpm > 120 AND major_key",
+      "mood": "happy",
+      "weeter_pose": "assets/characters/weeter/happy/thumbs_up.png",
+      "weeter_role": "approving",
+      "blubby_pose": "assets/characters/blubby/happy/excited_stars.png",
+      "blubby_role": "excited reaction",
+      "together_pose": "assets/characters/together/happy/thumbs_up_duo.png"
+    },
+    {
+      "condition": "bpm < 90 AND minor_key",
+      "mood": "sad",
+      "weeter_pose": "assets/characters/weeter/sad/crying.png",
+      "weeter_role": "emotionally moved",
+      "blubby_pose": "assets/characters/blubby/sad/scared.png",
+      "blubby_role": "empathetic reaction",
+      "together_pose": "assets/characters/together/sad/hugging_scared.png"
+    },
+    {
+      "condition": "bpm 90-120 AND minor_key",
+      "mood": "moody",
+      "weeter_pose": "assets/characters/weeter/cool/arms_crossed_cool.png",
+      "weeter_role": "brooding confidence",
+      "blubby_pose": "assets/characters/blubby/neutral/thinking.png",
+      "blubby_role": "contemplative",
+      "together_pose": "assets/characters/together/cool/sunglasses_duo.png"
+    },
+    {
+      "condition": "bpm 90-120 AND major_key",
+      "mood": "chill",
+      "weeter_pose": "assets/characters/weeter/neutral/waving.png",
+      "weeter_role": "relaxed greeting",
+      "blubby_pose": "assets/characters/blubby/happy/thumbs_up.png",
+      "blubby_role": "casual approval",
+      "together_pose": "assets/characters/together/fun/popcorn.png"
+    },
+    {
+      "condition": "energy_high AND bpm > 130",
+      "mood": "explosive",
+      "weeter_pose": "assets/characters/weeter/hype/megaphone.png",
+      "weeter_role": "announcing the energy",
+      "blubby_pose": "assets/characters/blubby/hype/mind_blown.png",
+      "blubby_role": "overwhelmed reaction",
+      "together_pose": "assets/characters/together/happy/celebrating.png"
+    },
+    {
+      "condition": "genre == 'jazz' OR genre == 'classical'",
+      "mood": "sophisticated",
+      "weeter_pose": "assets/characters/weeter/smart/monocle.png",
+      "weeter_role": "intellectual appreciation",
+      "blubby_pose": "assets/characters/blubby/smart/reading.png",
+      "blubby_role": "studious sidekick",
+      "together_pose": "assets/characters/together/smart/detective_duo.png"
+    }
+  ],
+  "default": {
+    "mood": "neutral",
+    "weeter_pose": "assets/characters/weeter/happy/thumbs_up.png",
+    "blubby_pose": "assets/characters/blubby/happy/excited_stars.png",
+    "together_pose": "assets/characters/together/happy/thumbs_up_duo.png"
+  },
+  "safety_valve": {
+    "min_key_confidence": 0.15,
+    "min_mode_confidence": 0.10,
+    "fallback": "genre_defaults",
+    "note": "If analyze_catalog.py returns analysis_reliable=false, skip this mood map entirely and use genre default poses. BPM and beat timestamps remain reliable."
+  },
+  "_phase2_character_notes": {
+    "blubby_sad_gap": "Current Blubby 'scared' pose can feel too anxious for melancholy-but-hopeful songs. Phase 2 goal: create an 'Empathetic/Sad' Blubby pose (comforting hug, teary-eyed solidarity) to better complement Weeter's crying pose.",
+    "preflight_reminder": "All paths in this file are project-root-relative. analyze_catalog.py must verify each resolved path exists on disk via preflight validation before passing to batch_produce.py."
+  }
+}

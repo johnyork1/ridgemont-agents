@@ -1,0 +1,21 @@
+{
+  "rules": [
+    {
+      "id": "container_requires_subgenre",
+      "applies_to_genre_ids": ["G0012", "G0017"],
+      "rule": "requires_subgenre",
+      "message": "Regional containers cannot be used alone. Select a subgenre."
+    },
+    {
+      "id": "engine_only_primary",
+      "rule": "primary_genre_must_be_engine",
+      "message": "Primary genre must have role=engine"
+    },
+    {
+      "id": "modifier_not_standalone",
+      "applies_to_tokens": ["Indie", "Alternative", "Cinematic", "Lo-fi"],
+      "rule": "cannot_be_sole_genre",
+      "message": "Modifiers cannot be the only genre token."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "publishers": [
+    {
+      "id": "FROZEN_CLOUD",
+      "name": "Frozen Cloud Music",
+      "default_artist": "Frozen Cloud"
+    },
+    {
+      "id": "PARK_BELLEVUE",
+      "name": "Park Bellevue Collective",
+      "default_artist": "Park Bellevue"
+    },
+    {
+      "id": "BAJAN_SUN",
+      "name": "Bajan Sun Publishing",
+      "default_artist": "Bajan Sun",
+      "notes": "Default artist for songs composed by John York"
+    }
+  ]
+}

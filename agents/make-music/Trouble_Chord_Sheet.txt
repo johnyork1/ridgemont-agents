@@ -1,0 +1,213 @@
+═══════════════════════════════════════════════════════════════════
+                         T R O U B L E
+═══════════════════════════════════════════════════════════════════
+Key: F major  |  Tempo: 90 BPM  |  Time: 4/4
+═══════════════════════════════════════════════════════════════════
+
+CHORD REFERENCE:
+  Verse:   F - Em - Am/C - Dm/G/C
+  Bridge:  Bb - C - Dm - C
+  Chorus:  Bb - F/C - F - Bb/F
+
+───────────────────────────────────────────────────────────────────
+[INTRO]  4 bars  |  instrumental  |  verse progression  |  sparse
+───────────────────────────────────────────────────────────────────
+
+|  F  |  Em  |  Am    C  |  Dm  G  C  |
+
+
+───────────────────────────────────────────────────────────────────
+[VERSE 1]  8 bars  |  restrained dynamics  |  low vocal intensity
+───────────────────────────────────────────────────────────────────
+
+F                              Em
+So many many miles from home
+
+Am             C               Dm      G   C
+Crowd noises fill my mind, but I'm so alone
+
+F                              Em
+Try to keep these thoughts at bay
+
+Am             C               Dm    G      C
+Trouble it haunts me, nearly every day
+
+
+───────────────────────────────────────────────────────────────────
+[VERSE 2]  8 bars  |  slight build  |  steady groove
+───────────────────────────────────────────────────────────────────
+
+F                                   Em
+Thought I threw my worries to the wind
+
+Am                  C             Dm    G    C
+But the pain is deep inside, deep within
+
+F                              Em
+I knelt… I stood… I bowed to pray
+
+Am              C              Dm    G        C
+These feelings I have, just won't go away
+
+
+───────────────────────────────────────────────────────────────────
+[BRIDGE 1]  8 bars  |  minor-key contrast  |  tension lift
+───────────────────────────────────────────────────────────────────
+
+Bb                         C
+Lightning strikes the heart of man
+
+Dm                         C
+Whoah, Oooo Oooh
+
+Bb                              C
+What's in the mind, I can't understand
+
+Dm                         C
+Oooh, Oooh, Wooo Oooh
+
+
+───────────────────────────────────────────────────────────────────
+[CHORUS]  8 bars  |  emotional hook  |  major-key resolve
+───────────────────────────────────────────────────────────────────
+
+Bb
+Trouble…
+
+F              C
+Trouble keep (mmm mmm)
+
+F
+Trouble…
+
+Bb             F
+Trouble deep (oh oh)
+
+C
+Trouble…
+
+F              C
+Trouble had (mmm)
+
+F
+(ah oh)
+
+Bb             F
+Trouble... bad
+
+
+───────────────────────────────────────────────────────────────────
+[INSTRUMENTAL BREAK]  8 bars  |  electric guitar crying lead
+───────────────────────────────────────────────────────────────────
+
+|  Bb  |  F  C  |  F  |  Bb  F  |  C  |  F  C  |  F  |  Bb  F  |
+
+
+───────────────────────────────────────────────────────────────────
+[VERSE 3]  8 bars  |  darker tone  |  controlled intensity
+───────────────────────────────────────────────────────────────────
+
+F                              Em
+There I stand, and I see my face
+
+Am             C                  Dm      G        C
+Try to look away, try not to feel disgrace
+
+F                                   Em
+But the storm that's brewing in my soul
+
+Am            C               Dm    G          C
+I madly give up, I give up all control
+
+
+───────────────────────────────────────────────────────────────────
+[VERSE 4]  8 bars  |  emotional fatigue  |  vocal grit
+───────────────────────────────────────────────────────────────────
+
+F                                      Em
+Now a time when tears should fill my eyes
+
+Am                  C           Dm    G   C
+What was once a man, slowly dies
+
+F                              Em
+Tried to keep these thoughts at bay
+
+Am              C                 Dm      G        C
+The demons won't, they just won't go away
+
+
+───────────────────────────────────────────────────────────────────
+[BRIDGE 2]  8 bars  |  minor-key return  |  reflective space
+───────────────────────────────────────────────────────────────────
+
+Bb                           C
+The world tries to understand
+
+Dm                              C
+Oooh, Ooo Oooh, Oooo Ooooh
+
+Bb                                  C
+Look into my eyes, look inside the man
+
+Dm                              C
+Aaah, Oooo Aaah, Oooo Aaah
+
+
+───────────────────────────────────────────────────────────────────
+[CHORUS 2]  8 bars  |  fuller band  |  strongest resolve
+───────────────────────────────────────────────────────────────────
+
+Bb
+Trouble…
+
+F              C
+Trouble keep (mmm mmm mmm)
+
+F
+Trouble…
+
+Bb             F
+Trouble deep (oh oh oh)
+
+C
+Trouble…
+
+F              C
+Trouble had (mmm mmm)
+
+F
+(ah oh ah)
+
+Bb             F
+Trouble... bad
+
+
+───────────────────────────────────────────────────────────────────
+[OUTRO]  16 bars  |  chorus loop  |  fade structure
+───────────────────────────────────────────────────────────────────
+
+Bb             F        C
+Hmmm,  Hmmm,  Mmmm,  Mmmm...
+
+F              Bb       F
+(continue fade)
+
+C              F        C
+...
+
+F              Bb       F
+(fade to silence)
+
+
+═══════════════════════════════════════════════════════════════════
+                        STRUCTURE SUMMARY
+═══════════════════════════════════════════════════════════════════
+
+Intro (4) → Verse 1 (8) → Verse 2 (8) → Bridge 1 (8) → Chorus (8)
+→ Instrumental (8) → Verse 3 (8) → Verse 4 (8) → Bridge 2 (8)
+→ Chorus 2 (8) → Outro (16)
+
+TOTAL: 92 bars  |  ~4:05 at 90 BPM
+
+═══════════════════════════════════════════════════════════════════

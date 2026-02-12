@@ -1,0 +1,12 @@
+# Cloudflare Wrangler local state
+.wrangler/
+
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+
+# Backup archives
+*.zip

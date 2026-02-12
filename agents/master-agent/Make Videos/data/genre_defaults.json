@@ -1,0 +1,160 @@
+{
+  "_description": "Genre-to-visual decision tree — fallback when no artist profile or mood map match",
+  "_version": "3.0",
+  "genres": {
+    "electronic": {
+      "weeter_pose": "assets/characters/weeter/hype/rocket_ship.png",
+      "blubby_pose": "assets/characters/blubby/hype/mind_blown.png",
+      "together_pose": "assets/characters/together/hype/rocket_duo.png",
+      "background_style": "neon_grid",
+      "color_grading": "high_contrast_neon"
+    },
+    "hip-hop": {
+      "weeter_pose": "assets/characters/weeter/cool/sunglasses.png",
+      "blubby_pose": "assets/characters/blubby/cool/sunglasses.png",
+      "together_pose": "assets/characters/together/cool/sunglasses_duo.png",
+      "background_style": "urban_skyline",
+      "color_grading": "warm_gold"
+    },
+    "pop": {
+      "weeter_pose": "assets/characters/weeter/happy/thumbs_up.png",
+      "blubby_pose": "assets/characters/blubby/happy/excited_stars.png",
+      "together_pose": "assets/characters/together/happy/thumbs_up_duo.png",
+      "background_style": "bright_gradient",
+      "color_grading": "bright_saturated"
+    },
+    "rock": {
+      "weeter_pose": "assets/characters/weeter/hype/megaphone.png",
+      "blubby_pose": "assets/characters/blubby/hype/mind_blown.png",
+      "together_pose": "assets/characters/together/hype/rocket_duo.png",
+      "background_style": "fire_stage",
+      "color_grading": "high_contrast_warm"
+    },
+    "jazz": {
+      "weeter_pose": "assets/characters/weeter/smart/monocle.png",
+      "blubby_pose": "assets/characters/blubby/smart/reading.png",
+      "together_pose": "assets/characters/together/smart/detective_duo.png",
+      "background_style": "smoky_club",
+      "color_grading": "warm_sepia"
+    },
+    "classical": {
+      "weeter_pose": "assets/characters/weeter/smart/monocle.png",
+      "blubby_pose": "assets/characters/blubby/smart/reading.png",
+      "together_pose": "assets/characters/together/smart/detective_duo.png",
+      "background_style": "concert_hall",
+      "color_grading": "warm_golden"
+    },
+    "country": {
+      "weeter_pose": "assets/characters/weeter/happy/thumbs_up.png",
+      "blubby_pose": "assets/characters/blubby/happy/thumbs_up.png",
+      "together_pose": "assets/characters/together/happy/thumbs_up_duo.png",
+      "background_style": "sunset_landscape",
+      "color_grading": "golden_hour"
+    },
+    "r&b": {
+      "weeter_pose": "assets/characters/weeter/cool/arms_crossed_cool.png",
+      "blubby_pose": "assets/characters/blubby/neutral/thinking.png",
+      "together_pose": "assets/characters/together/cool/sunglasses_duo.png",
+      "background_style": "city_night",
+      "color_grading": "moody_purple"
+    },
+    "reggae": {
+      "weeter_pose": "assets/characters/weeter/happy/thumbs_up.png",
+      "blubby_pose": "assets/characters/blubby/happy/excited_stars.png",
+      "together_pose": "assets/characters/together/fun/popcorn.png",
+      "background_style": "tropical_beach",
+      "color_grading": "warm_tropical"
+    },
+    "latin": {
+      "weeter_pose": "assets/characters/weeter/hype/megaphone.png",
+      "blubby_pose": "assets/characters/blubby/happy/excited_stars.png",
+      "together_pose": "assets/characters/together/happy/celebrating.png",
+      "background_style": "carnival",
+      "color_grading": "vibrant_warm"
+    },
+    "metal": {
+      "weeter_pose": "assets/characters/weeter/hype/megaphone.png",
+      "blubby_pose": "assets/characters/blubby/hype/mind_blown.png",
+      "together_pose": "assets/characters/together/hype/rocket_duo.png",
+      "background_style": "dark_fire",
+      "color_grading": "extreme_contrast"
+    },
+    "folk": {
+      "weeter_pose": "assets/characters/weeter/neutral/waving.png",
+      "blubby_pose": "assets/characters/blubby/happy/thumbs_up.png",
+      "together_pose": "assets/characters/together/fun/popcorn.png",
+      "background_style": "forest_cabin",
+      "color_grading": "warm_natural"
+    },
+    "blues": {
+      "weeter_pose": "assets/characters/weeter/sad/crying.png",
+      "blubby_pose": "assets/characters/blubby/sad/scared.png",
+      "together_pose": "assets/characters/together/sad/hugging_scared.png",
+      "background_style": "dimly_lit_bar",
+      "color_grading": "cool_blue"
+    },
+    "soul": {
+      "weeter_pose": "assets/characters/weeter/love/heart_eyes.png",
+      "blubby_pose": "assets/characters/blubby/happy/excited_stars.png",
+      "together_pose": "assets/characters/together/happy/celebrating.png",
+      "background_style": "warm_stage",
+      "color_grading": "warm_golden"
+    },
+    "ambient": {
+      "weeter_pose": "assets/characters/weeter/neutral/waving.png",
+      "blubby_pose": "assets/characters/blubby/neutral/thinking.png",
+      "together_pose": "assets/characters/together/smart/both_thinking.png",
+      "background_style": "abstract_particles",
+      "color_grading": "soft_ethereal"
+    },
+    "gospel": {
+      "weeter_pose": "assets/characters/weeter/love/heart_eyes.png",
+      "blubby_pose": "assets/characters/blubby/happy/excited_stars.png",
+      "together_pose": "assets/characters/together/happy/celebrating.png",
+      "background_style": "golden_light",
+      "color_grading": "warm_divine"
+    },
+    "punk": {
+      "weeter_pose": "assets/characters/weeter/hype/megaphone.png",
+      "blubby_pose": "assets/characters/blubby/hype/mind_blown.png",
+      "together_pose": "assets/characters/together/hype/money_rain.png",
+      "background_style": "grungy_venue",
+      "color_grading": "high_contrast_raw"
+    },
+    "indie": {
+      "weeter_pose": "assets/characters/weeter/neutral/waving.png",
+      "blubby_pose": "assets/characters/blubby/neutral/curious.png",
+      "together_pose": "assets/characters/together/fun/popcorn.png",
+      "background_style": "vintage_film",
+      "color_grading": "warm_vintage"
+    },
+    "funk": {
+      "weeter_pose": "assets/characters/weeter/cool/sunglasses.png",
+      "blubby_pose": "assets/characters/blubby/happy/excited_stars.png",
+      "together_pose": "assets/characters/together/cool/flexing.png",
+      "background_style": "disco_floor",
+      "color_grading": "saturated_retro"
+    },
+    "world": {
+      "weeter_pose": "assets/characters/weeter/happy/thumbs_up.png",
+      "blubby_pose": "assets/characters/blubby/happy/excited_stars.png",
+      "together_pose": "assets/characters/together/happy/selfie.png",
+      "background_style": "cultural_mosaic",
+      "color_grading": "rich_natural"
+    },
+    "cinematic": {
+      "weeter_pose": "assets/characters/weeter/smart/monocle.png",
+      "blubby_pose": "assets/characters/blubby/neutral/thinking.png",
+      "together_pose": "assets/characters/together/smart/detective_duo.png",
+      "background_style": "epic_landscape",
+      "color_grading": "cinematic_grade"
+    }
+  },
+  "_default": {
+    "weeter_pose": "assets/characters/weeter/happy/thumbs_up.png",
+    "blubby_pose": "assets/characters/blubby/happy/excited_stars.png",
+    "together_pose": "assets/characters/together/happy/thumbs_up_duo.png",
+    "background_style": "gradient",
+    "color_grading": "balanced"
+  }
+}
