@@ -1,0 +1,81 @@
+{
+  "_doc": "Output format specifications for the 7 video/image deliverables produced by batch_produce.py.",
+  "formats": {
+    "master": {
+      "width": 1920,
+      "height": 1080,
+      "aspect": "16:9",
+      "max_duration_seconds": null,
+      "suffix": "master",
+      "codec": "libx264",
+      "crf": 23,
+      "description": "Full-length landscape master video for YouTube"
+    },
+    "short_blurfill": {
+      "width": 1080,
+      "height": 1920,
+      "aspect": "9:16",
+      "max_duration_seconds": 59,
+      "suffix": "short_blurfill",
+      "codec": "libx264",
+      "crf": 23,
+      "background": "blur_fill",
+      "description": "Vertical short with blurred edges for YouTube Shorts / Reels"
+    },
+    "square": {
+      "width": 1080,
+      "height": 1080,
+      "aspect": "1:1",
+      "max_duration_seconds": null,
+      "suffix": "square",
+      "codec": "libx264",
+      "crf": 23,
+      "description": "Square crop for Instagram feed and Twitter/X"
+    },
+    "story": {
+      "width": 1080,
+      "height": 1920,
+      "aspect": "9:16",
+      "max_duration_seconds": 15,
+      "suffix": "story",
+      "codec": "libx264",
+      "crf": 23,
+      "description": "15-second vertical clip for Instagram/Facebook Stories"
+    },
+    "thumbnail": {
+      "width": 1280,
+      "height": 720,
+      "aspect": "16:9",
+      "max_duration_seconds": null,
+      "suffix": "thumb",
+      "format": "png",
+      "description": "Static image thumbnail for YouTube"
+    },
+    "lyric_video": {
+      "width": 1920,
+      "height": 1080,
+      "aspect": "16:9",
+      "max_duration_seconds": null,
+      "suffix": "lyric",
+      "codec": "libx264",
+      "crf": 23,
+      "description": "Full-length video with synchronized lyric overlay"
+    },
+    "visualizer": {
+      "width": 1920,
+      "height": 1080,
+      "aspect": "16:9",
+      "max_duration_seconds": null,
+      "suffix": "viz",
+      "codec": "libx264",
+      "crf": 23,
+      "description": "Audio waveform visualizer video"
+    }
+  },
+  "global_defaults": {
+    "fps": 30,
+    "audio_codec": "aac",
+    "audio_bitrate": "192k",
+    "pixel_format": "yuv420p"
+  }
+}

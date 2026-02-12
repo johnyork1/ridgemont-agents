@@ -1,0 +1,101 @@
+{
+  "_doc": "Visual identity per genre for artist profile generation, thumbnails, and branded elements. Colors, fonts, motifs, and AI image prompt hints.",
+  "genres": {
+    "reggae": {
+      "primary_color": "#1B5E20",
+      "secondary_color": "#FFD600",
+      "accent_color": "#D32F2F",
+      "font_style": "rounded_bold",
+      "motifs": ["palm_trees", "sun", "waves", "lion"],
+      "ai_prompt_hint": "tropical island vibes, golden sunset, rastafarian colors"
+    },
+    "hip_hop": {
+      "primary_color": "#212121",
+      "secondary_color": "#FFD700",
+      "accent_color": "#9C27B0",
+      "font_style": "block_caps",
+      "motifs": ["microphone", "chain", "boombox", "graffiti"],
+      "ai_prompt_hint": "urban streetwear, neon lights, gold accents, graffiti walls"
+    },
+    "pop": {
+      "primary_color": "#E91E63",
+      "secondary_color": "#00BCD4",
+      "accent_color": "#FFC107",
+      "font_style": "clean_sans",
+      "motifs": ["stars", "confetti", "hearts", "sparkles"],
+      "ai_prompt_hint": "bright colorful pop art, glossy, bubbly, candy colors"
+    },
+    "rock": {
+      "primary_color": "#B71C1C",
+      "secondary_color": "#263238",
+      "accent_color": "#FF6F00",
+      "font_style": "distressed_serif",
+      "motifs": ["guitar", "lightning", "flames", "skull"],
+      "ai_prompt_hint": "dark stage lighting, electric guitar, smoke, leather"
+    },
+    "electronic": {
+      "primary_color": "#00E5FF",
+      "secondary_color": "#7C4DFF",
+      "accent_color": "#FF1744",
+      "font_style": "futuristic_mono",
+      "motifs": ["waveform", "circuit", "laser", "grid"],
+      "ai_prompt_hint": "neon synthwave grid, laser beams, digital particles"
+    },
+    "jazz": {
+      "primary_color": "#1A237E",
+      "secondary_color": "#FFB300",
+      "accent_color": "#795548",
+      "font_style": "elegant_serif",
+      "motifs": ["saxophone", "piano_keys", "smoke", "spotlight"],
+      "ai_prompt_hint": "smoky jazz club, warm spotlight, art deco, brass instruments"
+    },
+    "classical": {
+      "primary_color": "#3E2723",
+      "secondary_color": "#D4AF37",
+      "accent_color": "#ECEFF1",
+      "font_style": "traditional_serif",
+      "motifs": ["violin", "sheet_music", "chandelier", "curtain"],
+      "ai_prompt_hint": "grand concert hall, velvet curtains, golden ornaments"
+    },
+    "r_and_b": {
+      "primary_color": "#4A148C",
+      "secondary_color": "#E040FB",
+      "accent_color": "#FFD54F",
+      "font_style": "smooth_sans",
+      "motifs": ["moon", "city_skyline", "wine_glass", "silk"],
+      "ai_prompt_hint": "purple mood lighting, city night, silk textures, intimate"
+    },
+    "country": {
+      "primary_color": "#5D4037",
+      "secondary_color": "#FFA726",
+      "accent_color": "#2E7D32",
+      "font_style": "western_slab",
+      "motifs": ["guitar", "boots", "barn", "sunset_field"],
+      "ai_prompt_hint": "rustic barn, golden wheat field, cowboy boots, sunset"
+    },
+    "blues": {
+      "primary_color": "#0D47A1",
+      "secondary_color": "#78909C",
+      "accent_color": "#FFAB40",
+      "font_style": "worn_serif",
+      "motifs": ["harmonica", "crossroads", "rain", "porch"],
+      "ai_prompt_hint": "rainy night, neon bar sign, blues guitar, dimly lit"
+    },
+    "metal": {
+      "primary_color": "#000000",
+      "secondary_color": "#B0BEC5",
+      "accent_color": "#D50000",
+      "font_style": "angular_gothic",
+      "motifs": ["horns", "chains", "fire", "thorns"],
+      "ai_prompt_hint": "dark gothic, fire and smoke, chrome metal, aggressive"
+    }
+  },
+  "fallback": {
+    "primary_color": "#37474F",
+    "secondary_color": "#26C6DA",
+    "accent_color": "#FFAB40",
+    "font_style": "clean_sans",
+    "motifs": ["music_note", "waveform"],
+    "ai_prompt_hint": "modern music aesthetic, clean minimal design"
+  }
+}

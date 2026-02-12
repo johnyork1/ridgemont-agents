@@ -1,0 +1,7 @@
+.git/
+.venv/
+__pycache__/
+*.docx
+*.bak
+*.tmp
+.DS_Store

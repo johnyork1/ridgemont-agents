@@ -1,0 +1,99 @@
+{
+  "_doc": "Mood mapping rules for the Make Videos pipeline. 7 conditional rules map BPM/key/energy to moods, which determine Weeter & Blubby character poses.",
+  "safety_valve": {
+    "key_confidence_threshold": 0.15,
+    "mode_confidence_threshold": 0.10,
+    "fallback": "Use genre_defaults.json poses when confidence is below thresholds"
+  },
+  "rules": [
+    {
+      "mood": "happy",
+      "conditions": { "bpm_min": 100, "bpm_max": 140, "key_mode": "major", "energy_min": 0.5 },
+      "description": "Upbeat major-key songs with moderate-to-high energy"
+    },
+    {
+      "mood": "hype",
+      "conditions": { "bpm_min": 130, "bpm_max": 999, "energy_min": 0.75 },
+      "description": "Fast, high-energy songs regardless of key"
+    },
+    {
+      "mood": "sad",
+      "conditions": { "bpm_min": 0, "bpm_max": 100, "key_mode": "minor", "energy_max": 0.45 },
+      "description": "Slow minor-key songs with low energy"
+    },
+    {
+      "mood": "moody",
+      "conditions": { "bpm_min": 0, "bpm_max": 120, "key_mode": "minor", "energy_min": 0.45, "energy_max": 0.7 },
+      "description": "Minor-key with moderate energy — tense or brooding"
+    },
+    {
+      "mood": "chill",
+      "conditions": { "bpm_min": 70, "bpm_max": 110, "energy_max": 0.5 },
+      "description": "Laid-back tempo and low energy, any key"
+    },
+    {
+      "mood": "explosive",
+      "conditions": { "bpm_min": 140, "bpm_max": 999, "energy_min": 0.85 },
+      "description": "Very fast and very high energy — drops, climaxes"
+    },
+    {
+      "mood": "sophisticated",
+      "conditions": { "bpm_min": 80, "bpm_max": 130, "energy_min": 0.3, "energy_max": 0.65 },
+      "description": "Mid-tempo, moderate energy — jazz, soul, R&B"
+    }
+  ],
+  "priority_order": ["explosive", "hype", "happy", "moody", "sad", "chill", "sophisticated"],
+  "character_dynamics": {
+    "happy": {
+      "weeter": { "pose_folder": "happy", "animation": "bounce", "scale": 1.0 },
+      "blubby": { "pose_folder": "happy", "animation": "bounce", "scale": 1.0 },
+      "together": { "pose_folder": "happy", "animation": "bounce", "scale": 1.0 },
+      "relationship": "Both characters are joyful and energetic together"
+    },
+    "hype": {
+      "weeter": { "pose_folder": "hype", "animation": "beat_pulse", "scale": 1.1 },
+      "blubby": { "pose_folder": "hype", "animation": "beat_pulse", "scale": 1.1 },
+      "together": { "pose_folder": "hype", "animation": "beat_pulse", "scale": 1.0 },
+      "relationship": "Weeter leads the hype, Blubby mirrors the energy"
+    },
+    "sad": {
+      "weeter": { "pose_folder": "sad", "animation": "slow_breathe", "scale": 0.95 },
+      "blubby": { "pose_folder": "sad", "animation": "slow_breathe", "scale": 0.95 },
+      "together": { "pose_folder": "chill", "animation": "slow_breathe", "scale": 0.9 },
+      "relationship": "Blubby comforts Weeter, subdued body language"
+    },
+    "moody": {
+      "weeter": { "pose_folder": "moody", "animation": "slow_sway", "scale": 1.0 },
+      "blubby": { "pose_folder": "moody", "animation": "slow_sway", "scale": 1.0 },
+      "together": { "pose_folder": "chill", "animation": "slow_sway", "scale": 0.95 },
+      "relationship": "Weeter broods, Blubby is cautiously present"
+    },
+    "chill": {
+      "weeter": { "pose_folder": "chill", "animation": "gentle_breathe", "scale": 1.0 },
+      "blubby": { "pose_folder": "chill", "animation": "gentle_breathe", "scale": 1.0 },
+      "together": { "pose_folder": "chill", "animation": "gentle_breathe", "scale": 1.0 },
+      "relationship": "Both relaxed, easy vibes, lounging energy"
+    },
+    "explosive": {
+      "weeter": { "pose_folder": "explosive", "animation": "shake", "scale": 1.15 },
+      "blubby": { "pose_folder": "explosive", "animation": "shake", "scale": 1.15 },
+      "together": { "pose_folder": "happy", "animation": "shake", "scale": 1.1 },
+      "relationship": "Both characters react with shock and awe"
+    },
+    "sophisticated": {
+      "weeter": { "pose_folder": "chill", "animation": "gentle_breathe", "scale": 1.0 },
+      "blubby": { "pose_folder": "chill", "animation": "gentle_breathe", "scale": 1.0 },
+      "together": { "pose_folder": "chill", "animation": "gentle_breathe", "scale": 0.95 },
+      "relationship": "Refined composure, subtle movements"
+    }
+  },
+  "animation_constants": {
+    "breathe_cycle_seconds": 2.0,
+    "breathe_scale_range": [0.98, 1.02],
+    "beat_bounce_px": [5, 10],
+    "entrance_duration_seconds": 0.5,
+    "entrance_style": "bounce_in",
+    "exit_duration_seconds": 0.3,
+    "exit_style": "fade_out"
+  }
+}

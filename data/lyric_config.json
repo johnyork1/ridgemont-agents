@@ -1,0 +1,41 @@
+{
+  "_doc": "Configuration for lyric video overlay rendering by lyric_video.py.",
+  "font": {
+    "family": "Arial",
+    "fallback": "DejaVu Sans",
+    "size_primary": 56,
+    "size_secondary": 36,
+    "weight": "bold",
+    "color": "#FFFFFF",
+    "shadow_color": "#000000",
+    "shadow_offset_px": 3,
+    "stroke_color": "#000000",
+    "stroke_width_px": 2
+  },
+  "position": {
+    "anchor": "bottom_center",
+    "y_offset_pct": 0.20,
+    "max_width_pct": 0.80,
+    "line_spacing": 1.4
+  },
+  "animation": {
+    "fade_in_seconds": 0.25,
+    "fade_out_seconds": 0.25,
+    "hold_after_seconds": 0.5,
+    "word_highlight_color": "#FFD700",
+    "word_highlight_enabled": true,
+    "karaoke_mode": false
+  },
+  "background": {
+    "overlay_enabled": true,
+    "overlay_color": "#000000",
+    "overlay_opacity": 0.35,
+    "overlay_region": "bottom_third"
+  },
+  "timing": {
+    "sync_source": "lrc_file",
+    "fallback_words_per_minute": 150,
+    "min_display_seconds": 1.0,
+    "max_display_seconds": 6.0
+  }
+}

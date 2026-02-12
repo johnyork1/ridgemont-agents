@@ -1,0 +1,21 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+
+# Large media (tracked separately or via LFS)
+catalog/
+
+# Temp files
+*.tmp
+*.bak
+
+# Output (generated files)
+output/

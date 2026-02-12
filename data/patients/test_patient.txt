@@ -1,0 +1,4 @@
+Patient: John Doe
+Age: 52
+Condition: Hypertension
+Notes: Blood pressure elevated. Monitoring recommended.

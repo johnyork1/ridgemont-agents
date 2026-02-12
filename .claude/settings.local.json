@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3:*)",
+      "Bash(ls:*)",
+      "Bash(/Users/johnyork/Ridgemont_Studio/.venv/bin/python3:*)",
+      "Bash(/Users/johnyork/Ridgemont_Studio/.venv/bin/pip list:*)",
+      "Bash(/Users/johnyork/Ridgemont_Studio/.venv/bin/pip install:*)",
+      "Bash(du:*)",
+      "Bash(find:*)",
+      "Bash(cmp:*)",
+      "Bash(wc:*)",
+      "Bash(chmod:*)",
+      "Bash(/Users/johnyork/Ridgemont_Studio/.venv/bin/pip check:*)",
+      "Bash(ffmpeg:*)",
+      "Bash(PYTHON=/Users/johnyork/Ridgemont_Studio/.venv/bin/python3:*)",
+      "Bash(for script in analyze_catalog ingest_song baseline_master beat_sync_cuts batch_produce generate_prompt)",
+      "Bash(do)",
+      "Bash(echo:*)",
+      "Bash($PYTHON /Users/johnyork/Ridgemont_Studio/scripts/$script.py --help)",
+      "Bash(done)",
+      "Bash(PY=/Users/johnyork/Ridgemont_Studio/.venv/bin/python3)",
+      "Bash($PY /Users/johnyork/Ridgemont_Studio/scripts/prep_characters.py --help)",
+      "Bash($PY /Users/johnyork/Ridgemont_Studio/scripts/ingest_song.py --help)",
+      "Bash($PY /Users/johnyork/Ridgemont_Studio/scripts/render_pro_video.py --help)",
+      "Bash(git add:*)"
+    ]
+  }
+}

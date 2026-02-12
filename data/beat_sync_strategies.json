@@ -1,0 +1,69 @@
+{
+  "_doc": "Beat synchronization cut strategies for beat_sync_cuts.py. Each strategy defines how video segments are cut to musical beats for different platforms and energy levels.",
+  "strategies": {
+    "hook_first": {
+      "description": "Start with the catchiest section (chorus/hook) for maximum retention on short-form platforms.",
+      "target_formats": ["short_blurfill", "story"],
+      "segment_selection": "highest_energy_section",
+      "cut_timing": "on_beat",
+      "min_segment_seconds": 1.5,
+      "max_segment_seconds": 8.0,
+      "transition": "cut",
+      "beat_divisor": 1,
+      "priority": 1
+    },
+    "energy_peak": {
+      "description": "Build from low to high energy, cutting at beat boundaries. Best for longer formats.",
+      "target_formats": ["master", "lyric_video", "visualizer"],
+      "segment_selection": "ascending_energy",
+      "cut_timing": "on_downbeat",
+      "min_segment_seconds": 4.0,
+      "max_segment_seconds": 16.0,
+      "transition": "crossfade",
+      "crossfade_seconds": 0.3,
+      "beat_divisor": 4,
+      "priority": 2
+    },
+    "rapid_fire": {
+      "description": "Quick cuts every 1-2 beats for high-energy electronic/dance tracks.",
+      "target_formats": ["short_blurfill", "story", "square"],
+      "segment_selection": "sequential",
+      "cut_timing": "on_beat",
+      "min_segment_seconds": 0.5,
+      "max_segment_seconds": 2.0,
+      "transition": "cut",
+      "beat_divisor": 1,
+      "energy_threshold": 0.8,
+      "priority": 3
+    },
+    "slow_flow": {
+      "description": "Long, breathing segments for chill/ambient tracks. Minimal cuts.",
+      "target_formats": ["master", "lyric_video"],
+      "segment_selection": "sequential",
+      "cut_timing": "on_bar",
+      "min_segment_seconds": 8.0,
+      "max_segment_seconds": 30.0,
+      "transition": "crossfade",
+      "crossfade_seconds": 1.0,
+      "beat_divisor": 8,
+      "energy_threshold_max": 0.4,
+      "priority": 4
+    }
+  },
+  "selection_rules": {
+    "_doc": "How to auto-select a strategy based on song analysis.",
+    "by_energy": [
+      { "energy_min": 0.8, "preferred": "rapid_fire" },
+      { "energy_min": 0.5, "energy_max": 0.8, "preferred": "energy_peak" },
+      { "energy_max": 0.5, "preferred": "slow_flow" }
+    ],
+    "by_format": {
+      "short_blurfill": "hook_first",
+      "story": "hook_first",
+      "square": "hook_first",
+      "master": "energy_peak",
+      "lyric_video": "energy_peak",
+      "visualizer": "energy_peak"
+    }
+  }
+}

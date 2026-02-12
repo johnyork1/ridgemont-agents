@@ -1,0 +1,19 @@
+{
+  "name": "dr-vinnie-boombatz",
+  "version": "1.0.0",
+  "description": "Dr. Vinnie Boombatz — A comprehensive medical AI agent specializing in clinical knowledge, diagnostics support, pharmacology, medical research synthesis, AI-driven medical advances, lab interpretation, imaging analysis, preventive medicine, mental health, and patient education. Built for Claude Cowork on Opus 4.6.",
+  "author": "John York / Ridgemont Studio",
+  "homepage": "",
+  "tags": [
+    "medical",
+    "healthcare",
+    "diagnostics",
+    "pharmacology",
+    "research",
+    "AI-medicine",
+    "clinical",
+    "patient-education",
+    "emergency-medicine",
+    "mental-health"
+  ]
+}

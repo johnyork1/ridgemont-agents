@@ -1,0 +1,54 @@
+{
+  "_doc": "Baseline rendering recipe for the Make Videos pipeline. Defines all timing, resolution, and composition constants for master video production.",
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "codec": "libx264",
+    "pixel_format": "yuv420p",
+    "crf": 23,
+    "preset": "medium"
+  },
+  "audio": {
+    "codec": "aac",
+    "bitrate": "192k",
+    "sample_rate": 44100
+  },
+  "timing": {
+    "intro_duration_seconds": 3.0,
+    "endcard_duration_seconds": 5.0,
+    "fade_in_seconds": 0.5,
+    "fade_out_seconds": 1.0,
+    "crossfade_seconds": 0.3
+  },
+  "composition": {
+    "background_blur_radius": 50,
+    "background_darken_factor": 0.4,
+    "character_max_height_pct": 0.45,
+    "character_bottom_margin_pct": 0.08,
+    "title_font_size": 48,
+    "subtitle_font_size": 32,
+    "title_position": "top_center",
+    "watermark_opacity": 0.15,
+    "watermark_position": "bottom_right"
+  },
+  "ken_burns": {
+    "enabled": true,
+    "zoom_range": [1.0, 1.15],
+    "pan_speed": 0.02,
+    "cycle_seconds": 8.0
+  },
+  "output_formats": {
+    "master": { "width": 1920, "height": 1080, "suffix": "master" },
+    "short_blurfill": { "width": 1080, "height": 1920, "max_seconds": 59, "suffix": "short_blurfill" },
+    "square": { "width": 1080, "height": 1080, "suffix": "square" },
+    "story": { "width": 1080, "height": 1920, "max_seconds": 15, "suffix": "story" },
+    "thumbnail": { "width": 1280, "height": 720, "suffix": "thumb", "format": "png" }
+  },
+  "endcard": {
+    "show_artist": true,
+    "show_song_title": true,
+    "show_characters": true,
+    "background_style": "blurred_last_frame"
+  }
+}

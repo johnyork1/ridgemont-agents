@@ -1,0 +1,944 @@
+{
+  "_description": "122 subgenres across 21 parent genres for Suno v5.0 prompt generation",
+  "_version": "3.0",
+  "genres": {
+    "electronic": {
+      "subgenres": [
+        {
+          "name": "deep house",
+          "rhythm": "four-on-the-floor, 120-125 BPM",
+          "era": "1990s-present",
+          "influences": ["garage house", "soul", "jazz"],
+          "default_instruments": ["Roland TR-909", "Juno-106 synth pad", "deep bass", "warm strings"]
+        },
+        {
+          "name": "techno",
+          "rhythm": "four-on-the-floor, 120-150 BPM",
+          "era": "1980s-present",
+          "influences": ["industrial", "electronic", "minimalism"],
+          "default_instruments": ["TR-808 kick", "Roland TB-303", "filtered synth", "metallic percussion"]
+        },
+        {
+          "name": "trance",
+          "rhythm": "four-on-the-floor, 125-150 BPM",
+          "era": "1990s-present",
+          "influences": ["house", "ambient", "progressive rock"],
+          "default_instruments": ["euphoric synth lead", "pulsing bass", "atmospheric pad", "uplifting strings"]
+        },
+        {
+          "name": "drum and bass",
+          "rhythm": "breakbeats, 160-180 BPM",
+          "era": "1990s-present",
+          "influences": ["breakbeat hardcore", "jungle", "hip-hop"],
+          "default_instruments": ["fast breakbeats", "wobbling bass", "chopped vocal samples", "reverb cymbals"]
+        },
+        {
+          "name": "dubstep",
+          "rhythm": "half-time broken beats, 140 BPM",
+          "era": "2000s-present",
+          "influences": ["grime", "garage", "reggae dub"],
+          "default_instruments": ["wobble bass", "reese bass", "high-pass filter sweeps", "sub-bass"]
+        },
+        {
+          "name": "synthwave",
+          "rhythm": "steady electronic, 100-130 BPM",
+          "era": "2010s-present",
+          "influences": ["80s synth-pop", "electro", "dark synth"],
+          "default_instruments": ["FM synth", "analog string pad", "gated reverb drums", "neon arpeggios"]
+        },
+        {
+          "name": "IDM",
+          "rhythm": "complex polyrhythms, 90-140 BPM",
+          "era": "1990s-present",
+          "influences": ["ambient", "glitch", "electroacoustic"],
+          "default_instruments": ["glitchy textures", "processed percussion", "intricate synth patterns", "granular synthesis"]
+        },
+        {
+          "name": "future bass",
+          "rhythm": "forward-looking trap, 100-160 BPM",
+          "era": "2010s-present",
+          "influences": ["trap", "ambient", "jazz chords"],
+          "default_instruments": ["lush chord progressions", "trap snare roll", "bass wobble", "ethereal pads"]
+        }
+      ]
+    },
+    "hip-hop": {
+      "subgenres": [
+        {
+          "name": "boom bap",
+          "rhythm": "boom-chick breaks, 85-100 BPM",
+          "era": "1990s-present",
+          "influences": ["breakbeat jazz", "funk", "soul"],
+          "default_instruments": ["sampled drums", "jazzy piano", "upright bass", "vinyl crackle"]
+        },
+        {
+          "name": "trap",
+          "rhythm": "hi-hat triplets, 140-150 BPM",
+          "era": "2010s-present",
+          "influences": ["crunk", "southern rap", "Detroit techno"],
+          "default_instruments": ["808 kick", "rapid hi-hats", "dark synth", "snare roll"]
+        },
+        {
+          "name": "lo-fi hip hop",
+          "rhythm": "relaxed swing, 85-110 BPM",
+          "era": "2010s-present",
+          "influences": ["boom bap", "jazz", "ambient"],
+          "default_instruments": ["dusty sampled drums", "jazzy chords", "vinyl noise", "warm bass"]
+        },
+        {
+          "name": "conscious rap",
+          "rhythm": "lyric-focused beats, 85-110 BPM",
+          "era": "1980s-present",
+          "influences": ["soul", "funk", "spoken word"],
+          "default_instruments": ["live drums", "orchestral samples", "soulful strings", "live bass"]
+        },
+        {
+          "name": "gangsta rap",
+          "rhythm": "heavy funk grooves, 90-100 BPM",
+          "era": "1990s-present",
+          "influences": ["funk", "blues", "street narrative"],
+          "default_instruments": ["thick bass", "sampled horns", "aggressive drums", "talk-box synth"]
+        },
+        {
+          "name": "cloud rap",
+          "rhythm": "ethereal floating beat, 85-110 BPM",
+          "era": "2010s-present",
+          "influences": ["lo-fi hip hop", "ambient", "dream pop"],
+          "default_instruments": ["pitched vocal samples", "reversed strings", "ethereal pads", "soft drums"]
+        },
+        {
+          "name": "crunk",
+          "rhythm": "repetitive chants, 90-110 BPM",
+          "era": "2000s-present",
+          "influences": ["dirty south", "call-and-response", "electronic"],
+          "default_instruments": ["blaring synth", "snappy drums", "layered vocals", "energetic bass"]
+        }
+      ]
+    },
+    "pop": {
+      "subgenres": [
+        {
+          "name": "synth pop",
+          "rhythm": "electronic pop beat, 110-130 BPM",
+          "era": "1980s-present",
+          "influences": ["new wave", "electronic", "art rock"],
+          "default_instruments": ["analog synthesizer", "gated reverb drums", "processed vocals", "arpeggiated synth"]
+        },
+        {
+          "name": "dance pop",
+          "rhythm": "four-on-the-floor, 125-135 BPM",
+          "era": "1980s-present",
+          "influences": ["disco", "electronic", "funk"],
+          "default_instruments": ["driving beat", "euphoric synth", "vocal chops", "pulsing bass"]
+        },
+        {
+          "name": "indie pop",
+          "rhythm": "quirky pop sensibility, 100-130 BPM",
+          "era": "1990s-present",
+          "influences": ["indie rock", "twee pop", "post-punk"],
+          "default_instruments": ["jangly guitars", "lo-fi drums", "whimsical synth", "bass guitar"]
+        },
+        {
+          "name": "art pop",
+          "rhythm": "experimental pop structures, 90-130 BPM",
+          "era": "2010s-present",
+          "influences": ["avant-garde", "electronic", "classical"],
+          "default_instruments": ["orchestral elements", "unconventional percussion", "processed vocals", "dissonant synth"]
+        },
+        {
+          "name": "dream pop",
+          "rhythm": "ethereal floating beat, 90-120 BPM",
+          "era": "1990s-present",
+          "influences": ["shoegaze", "synth pop", "ambient"],
+          "default_instruments": ["reverb-drenched guitar", "ethereal vocals", "lush pads", "dreamy synth"]
+        },
+        {
+          "name": "electropop",
+          "rhythm": "electronic dance beat, 120-135 BPM",
+          "era": "1990s-present",
+          "influences": ["synth pop", "electronic", "dance"],
+          "default_instruments": ["synth bass", "bright synth lead", "electronic drum kit", "vocal effects"]
+        }
+      ]
+    },
+    "rock": {
+      "subgenres": [
+        {
+          "name": "classic rock",
+          "rhythm": "straightforward 4/4 beat, 100-130 BPM",
+          "era": "1970s-1980s",
+          "influences": ["blues", "rock and roll", "folk rock"],
+          "default_instruments": ["electric guitar", "bass guitar", "drums", "organ"]
+        },
+        {
+          "name": "alternative rock",
+          "rhythm": "dynamic punk-derived beat, 90-120 BPM",
+          "era": "1980s-present",
+          "influences": ["post-punk", "punk", "indie rock"],
+          "default_instruments": ["distorted guitar", "energetic bass", "tight drums", "ambient synth"]
+        },
+        {
+          "name": "prog rock",
+          "rhythm": "complex time signatures, 80-140 BPM",
+          "era": "1970s-present",
+          "influences": ["classical", "jazz", "rock"],
+          "default_instruments": ["mellotron", "electric guitar", "bass", "elaborate drums"]
+        },
+        {
+          "name": "garage rock",
+          "rhythm": "raw driving beat, 120-140 BPM",
+          "era": "1960s-present",
+          "influences": ["rock and roll", "punk", "blues"],
+          "default_instruments": ["fuzzed guitar", "fuzzy bass", "minimal drums", "gritty vocals"]
+        },
+        {
+          "name": "post-rock",
+          "rhythm": "crescendo-building beat, 90-140 BPM",
+          "era": "1990s-present",
+          "influences": ["ambient", "indie rock", "math rock"],
+          "default_instruments": ["textured guitar layers", "building dynamics", "emotional drums", "sparse bass"]
+        },
+        {
+          "name": "psychedelic rock",
+          "rhythm": "hypnotic grooves, 100-130 BPM",
+          "era": "1960s-present",
+          "influences": ["blues rock", "Indian music", "funk"],
+          "default_instruments": ["wah-wah guitar", "Moog synth", "fuzzy bass", "swirling drums"]
+        },
+        {
+          "name": "shoegaze",
+          "rhythm": "ethereal wall of sound, 100-120 BPM",
+          "era": "1990s-present",
+          "influences": ["dream pop", "psychedelic rock", "post-punk"],
+          "default_instruments": ["layered distorted guitar", "buried vocals", "ambient textures", "steady drums"]
+        }
+      ]
+    },
+    "jazz": {
+      "subgenres": [
+        {
+          "name": "bebop",
+          "rhythm": "syncopated swing, 200-300 BPM",
+          "era": "1940s-present",
+          "influences": ["swing", "blues", "classical harmony"],
+          "default_instruments": ["trumpet", "saxophone", "upright bass", "drums"]
+        },
+        {
+          "name": "cool jazz",
+          "rhythm": "relaxed swing, 160-220 BPM",
+          "era": "1950s-present",
+          "influences": ["bebop", "classical", "European music"],
+          "default_instruments": ["trumpet", "vibraphone", "piano", "upright bass"]
+        },
+        {
+          "name": "jazz fusion",
+          "rhythm": "complex syncopation, 100-200 BPM",
+          "era": "1970s-present",
+          "influences": ["rock", "funk", "world music"],
+          "default_instruments": ["electric guitar", "Fender Rhodes", "electric bass", "fusion drums"]
+        },
+        {
+          "name": "smooth jazz",
+          "rhythm": "relaxed groove, 80-110 BPM",
+          "era": "1970s-present",
+          "influences": ["soul", "funk", "R&B"],
+          "default_instruments": ["saxophone", "Fender Rhodes", "bass guitar", "light percussion"]
+        },
+        {
+          "name": "free jazz",
+          "rhythm": "free-form improvisation",
+          "era": "1960s-present",
+          "influences": ["avant-garde", "world music", "classical contemporary"],
+          "default_instruments": ["any instruments", "atonal exploration", "collective improvisation", "experimental sonics"]
+        },
+        {
+          "name": "swing",
+          "rhythm": "jazz swing, 180-240 BPM",
+          "era": "1930s-1950s",
+          "influences": ["blues", "big band", "dance"],
+          "default_instruments": ["big band horns", "upright bass", "swing drums", "piano"]
+        }
+      ]
+    },
+    "classical": {
+      "subgenres": [
+        {
+          "name": "baroque",
+          "rhythm": "ornate rhythmic structures, 60-120 BPM",
+          "era": "1600s-1750s",
+          "influences": ["Renaissance", "dance music", "vocal music"],
+          "default_instruments": ["harpsichord", "violin", "flute", "cello"]
+        },
+        {
+          "name": "romantic",
+          "rhythm": "expressive rubato, 60-120 BPM",
+          "era": "1800s-1910s",
+          "influences": ["folk music", "opera", "nature"],
+          "default_instruments": ["piano", "violin", "flute", "French horn"]
+        },
+        {
+          "name": "impressionist",
+          "rhythm": "floating timeless feel, 40-100 BPM",
+          "era": "1870s-1920s",
+          "influences": ["baroque", "Eastern music", "visual impressionism"],
+          "default_instruments": ["piano", "harp", "flute", "soft strings"]
+        },
+        {
+          "name": "minimalist",
+          "rhythm": "repetitive patterns, 60-120 BPM",
+          "era": "1960s-present",
+          "influences": ["Indian classical", "electronic", "serial music"],
+          "default_instruments": ["piano", "sine waves", "strings", "minimalist percussion"]
+        },
+        {
+          "name": "contemporary classical",
+          "rhythm": "experimental structures, 40-160 BPM",
+          "era": "1950s-present",
+          "influences": ["serialism", "avant-garde", "electronic"],
+          "default_instruments": ["orchestral instruments", "extended techniques", "electronic elements", "prepared piano"]
+        }
+      ]
+    },
+    "country": {
+      "subgenres": [
+        {
+          "name": "honky tonk",
+          "rhythm": "twangy shuffle, 100-140 BPM",
+          "era": "1940s-1950s",
+          "influences": ["blues", "folk", "dance hall"],
+          "default_instruments": ["steel guitar", "acoustic guitar", "upright bass", "drums"]
+        },
+        {
+          "name": "outlaw country",
+          "rhythm": "rebellious rock-influenced beat, 100-130 BPM",
+          "era": "1970s-present",
+          "influences": ["rock", "blues", "honky tonk"],
+          "default_instruments": ["electric guitar", "harmonica", "drums", "bass guitar"]
+        },
+        {
+          "name": "country pop",
+          "rhythm": "accessible pop beat, 100-130 BPM",
+          "era": "1980s-present",
+          "influences": ["pop", "country", "rock"],
+          "default_instruments": ["acoustic guitar", "keyboards", "drums", "strings"]
+        },
+        {
+          "name": "bluegrass",
+          "rhythm": "driving percussive rhythm, 120-200 BPM",
+          "era": "1940s-present",
+          "influences": ["folk", "blues", "ballads"],
+          "default_instruments": ["banjo", "mandolin", "acoustic guitar", "upright bass"]
+        },
+        {
+          "name": "americana",
+          "rhythm": "roots-based groove, 80-130 BPM",
+          "era": "1990s-present",
+          "influences": ["folk", "country", "blues", "gospel"],
+          "default_instruments": ["acoustic guitar", "harmonica", "upright bass", "simple drums"]
+        },
+        {
+          "name": "alt-country",
+          "rhythm": "indie-influenced twang, 90-130 BPM",
+          "era": "1990s-present",
+          "influences": ["country", "indie rock", "punk"],
+          "default_instruments": ["jangly guitar", "country vocals", "bass guitar", "lo-fi drums"]
+        }
+      ]
+    },
+    "r&b": {
+      "subgenres": [
+        {
+          "name": "neo-soul",
+          "rhythm": "sophisticated groove, 80-110 BPM",
+          "era": "1990s-present",
+          "influences": ["soul", "jazz", "funk"],
+          "default_instruments": ["Fender Rhodes", "live strings", "groove bass", "live drums"]
+        },
+        {
+          "name": "contemporary r&b",
+          "rhythm": "modern production beat, 90-100 BPM",
+          "era": "2000s-present",
+          "influences": ["pop", "hip-hop", "soul"],
+          "default_instruments": ["R&B synth", "trap-influenced drums", "silky bass", "lush production"]
+        },
+        {
+          "name": "quiet storm",
+          "rhythm": "slow sensual groove, 60-90 BPM",
+          "era": "1980s-present",
+          "influences": ["soul", "smooth jazz", "ballads"],
+          "default_instruments": ["romantic strings", "smooth saxophone", "gentle bass", "soft percussion"]
+        },
+        {
+          "name": "new jack swing",
+          "rhythm": "swinging hip-hop beat, 100-130 BPM",
+          "era": "1990s-2000s",
+          "influences": ["hip-hop", "R&B", "dance-pop"],
+          "default_instruments": ["swinging drums", "synth stabs", "funky bass", "vocal riffs"]
+        },
+        {
+          "name": "alternative r&b",
+          "rhythm": "experimental groove, 80-120 BPM",
+          "era": "2010s-present",
+          "influences": ["electronic", "indie rock", "soul"],
+          "default_instruments": ["experimental synth", "unconventional drums", "modular bass", "vocal processing"]
+        },
+        {
+          "name": "funk r&b",
+          "rhythm": "funky syncopation, 100-120 BPM",
+          "era": "1980s-present",
+          "influences": ["funk", "soul", "disco"],
+          "default_instruments": ["talk-box", "slap bass", "funky drums", "horn stabs"]
+        }
+      ]
+    },
+    "reggae": {
+      "subgenres": [
+        {
+          "name": "roots reggae",
+          "rhythm": "skank offbeat, 60-100 BPM",
+          "era": "1970s-present",
+          "influences": ["ska", "rocksteady", "Rastafarian culture"],
+          "default_instruments": ["offbeat rhythm guitar", "deep bass", "roots drums", "organ"]
+        },
+        {
+          "name": "dancehall",
+          "rhythm": "riddim breakbeats, 90-150 BPM",
+          "era": "1980s-present",
+          "influences": ["reggae", "hip-hop", "electronic"],
+          "default_instruments": ["digital riddim", "electronic bass", "snappy drums", "vocal chatting"]
+        },
+        {
+          "name": "dub",
+          "rhythm": "spacious riddim, 90-110 BPM",
+          "era": "1970s-present",
+          "influences": ["reggae", "electronic", "experimental"],
+          "default_instruments": ["echoing bass", "vocal samples", "dub delay effects", "reverberant drums"]
+        },
+        {
+          "name": "lovers rock",
+          "rhythm": "smooth romantic riddim, 80-110 BPM",
+          "era": "1970s-present",
+          "influences": ["reggae", "soul", "ballad"],
+          "default_instruments": ["smooth strings", "romantic rhythm guitar", "warm bass", "soft drums"]
+        },
+        {
+          "name": "ska",
+          "rhythm": "upbeat offbeat skank, 140-200 BPM",
+          "era": "1960s-present",
+          "influences": ["rocksteady", "punk", "reggae"],
+          "default_instruments": ["horn section", "offbeat guitar chops", "energetic drums", "bouncy bass"]
+        }
+      ]
+    },
+    "latin": {
+      "subgenres": [
+        {
+          "name": "salsa",
+          "rhythm": "clave rhythm, 85-100 BPM",
+          "era": "1960s-present",
+          "influences": ["Cuban music", "mambo", "son"],
+          "default_instruments": ["brass section", "tumbao bass", "clave percussion", "congas"]
+        },
+        {
+          "name": "reggaeton",
+          "rhythm": "dembow rhythm, 85-105 BPM",
+          "era": "1990s-present",
+          "influences": ["dancehall", "hip-hop", "electronic"],
+          "default_instruments": ["dembow riddim", "booming 808 bass", "synth riff", "trap snare"]
+        },
+        {
+          "name": "bossa nova",
+          "rhythm": "subtle samba swing, 120-180 BPM",
+          "era": "1950s-present",
+          "influences": ["samba", "jazz", "popular song"],
+          "default_instruments": ["nylon guitar", "upright bass", "soft brushes", "light bongos"]
+        },
+        {
+          "name": "cumbia",
+          "rhythm": "heavy cumbia groove, 90-110 BPM",
+          "era": "1940s-present",
+          "influences": ["Colombian folk", "African rhythm", "Spanish guitar"],
+          "default_instruments": ["flute", "accordion", "driving cumbiero drums", "bass tumbao"]
+        },
+        {
+          "name": "bachata",
+          "rhythm": "romantic guitar rhythm, 110-130 BPM",
+          "era": "1960s-present",
+          "influences": ["bolero", "guitar-based folk", "romantic ballad"],
+          "default_instruments": ["romantic guitar riff", "acoustic bass", "light percussion", "emotional vocals"]
+        },
+        {
+          "name": "latin trap",
+          "rhythm": "trap beat with latin flavor, 85-105 BPM",
+          "era": "2010s-present",
+          "influences": ["trap", "reggaeton", "hip-hop"],
+          "default_instruments": ["808 kick", "latin percussion", "trap hi-hats", "trap snare"]
+        },
+        {
+          "name": "merengue",
+          "rhythm": "quick energetic beat, 120-170 BPM",
+          "era": "1930s-present",
+          "influences": ["Dominican music", "dance", "ballroom"],
+          "default_instruments": ["brass section", "merengue drums", "electric guitar", "energetic bass"]
+        }
+      ]
+    },
+    "metal": {
+      "subgenres": [
+        {
+          "name": "thrash metal",
+          "rhythm": "fast double-kick, 160-220 BPM",
+          "era": "1980s-present",
+          "influences": ["heavy metal", "punk", "speed metal"],
+          "default_instruments": ["distorted guitar", "aggressive bass", "double-kick drums", "screaming vocals"]
+        },
+        {
+          "name": "death metal",
+          "rhythm": "extreme blast beats, 160-240 BPM",
+          "era": "1980s-present",
+          "influences": ["thrash metal", "grindcore", "extreme metal"],
+          "default_instruments": ["heavily distorted guitar", "tremolo picking", "blast-beat drums", "death growl vocals"]
+        },
+        {
+          "name": "black metal",
+          "rhythm": "tremolo blast beats, 140-220 BPM",
+          "era": "1980s-present",
+          "influences": ["heavy metal", "death metal", "punk"],
+          "default_instruments": ["tremolo-picked guitar", "raw production", "blast-beat drums", "shrieking vocals"]
+        },
+        {
+          "name": "doom metal",
+          "rhythm": "slow heavy sludge, 40-80 BPM",
+          "era": "1980s-present",
+          "influences": ["heavy metal", "blues", "psychedelic rock"],
+          "default_instruments": ["heavily distorted guitar", "crushing bass", "slow drums", "anguished vocals"]
+        },
+        {
+          "name": "power metal",
+          "rhythm": "double-kick gallop, 140-200 BPM",
+          "era": "1980s-present",
+          "influences": ["heavy metal", "classical", "speed metal"],
+          "default_instruments": ["soaring lead guitar", "galloping bass", "fast drums", "soaring vocals"]
+        },
+        {
+          "name": "metalcore",
+          "rhythm": "breakdowns with fast sections, 140-200 BPM",
+          "era": "2000s-present",
+          "influences": ["metal", "hardcore punk", "groove metal"],
+          "default_instruments": ["distorted drop-tuned guitar", "breakdowns", "aggressive drums", "dual vocals"]
+        },
+        {
+          "name": "nu metal",
+          "rhythm": "syncopated groove, 80-120 BPM",
+          "era": "1990s-2000s",
+          "influences": ["hip-hop", "heavy metal", "funk"],
+          "default_instruments": ["down-tuned guitar", "rap-metal vocals", "programmed drums", "turntable"]
+        }
+      ]
+    },
+    "folk": {
+      "subgenres": [
+        {
+          "name": "traditional folk",
+          "rhythm": "organic acoustic rhythm, 80-140 BPM",
+          "era": "timeless",
+          "influences": ["cultural traditions", "oral history", "acoustic guitar"],
+          "default_instruments": ["acoustic guitar", "vocals", "harmonica", "percussion"]
+        },
+        {
+          "name": "folk rock",
+          "rhythm": "folk melody with rock beat, 100-140 BPM",
+          "era": "1960s-present",
+          "influences": ["folk", "rock", "protest music"],
+          "default_instruments": ["electric guitar", "acoustic guitar", "bass", "drums"]
+        },
+        {
+          "name": "neofolk",
+          "rhythm": "dark folk atmosphere, 80-120 BPM",
+          "era": "1980s-present",
+          "influences": ["folk", "post-punk", "ambient"],
+          "default_instruments": ["acoustic guitar", "dark strings", "sparse drums", "melancholic vocals"]
+        },
+        {
+          "name": "chamber folk",
+          "rhythm": "intimate acoustic ensemble, 80-130 BPM",
+          "era": "1990s-present",
+          "influences": ["classical", "folk", "chamber music"],
+          "default_instruments": ["violin", "cello", "acoustic guitar", "piano"]
+        },
+        {
+          "name": "anti-folk",
+          "rhythm": "DIY unpolished beat, 90-140 BPM",
+          "era": "1980s-present",
+          "influences": ["punk", "folk", "lo-fi"],
+          "default_instruments": ["acoustic guitar", "raw vocals", "minimal percussion", "improvised sounds"]
+        }
+      ]
+    },
+    "blues": {
+      "subgenres": [
+        {
+          "name": "delta blues",
+          "rhythm": "early blues shuffle, 80-120 BPM",
+          "era": "1920s-1950s",
+          "influences": ["field hollers", "African music", "spirituals"],
+          "default_instruments": ["acoustic guitar", "raw vocals", "slide guitar", "harmonica"]
+        },
+        {
+          "name": "chicago blues",
+          "rhythm": "electric shuffle, 100-140 BPM",
+          "era": "1940s-present",
+          "influences": ["delta blues", "electric guitar", "urban culture"],
+          "default_instruments": ["electric guitar", "upright bass", "drums", "harmonica"]
+        },
+        {
+          "name": "electric blues",
+          "rhythm": "amplified groove, 100-140 BPM",
+          "era": "1950s-present",
+          "influences": ["chicago blues", "rock", "soul"],
+          "default_instruments": ["electric guitar", "electric bass", "drums", "organ"]
+        },
+        {
+          "name": "blues rock",
+          "rhythm": "rock-influenced blues, 100-140 BPM",
+          "era": "1960s-present",
+          "influences": ["electric blues", "rock", "psychedelic rock"],
+          "default_instruments": ["distorted guitar", "bass guitar", "drums", "harmonica"]
+        },
+        {
+          "name": "modern blues",
+          "rhythm": "contemporary blues groove, 90-130 BPM",
+          "era": "1990s-present",
+          "influences": ["blues tradition", "soul", "contemporary music"],
+          "default_instruments": ["modern electric guitar", "keyboards", "modern bass", "contemporary drums"]
+        }
+      ]
+    },
+    "soul": {
+      "subgenres": [
+        {
+          "name": "classic soul",
+          "rhythm": "soulful groove, 100-130 BPM",
+          "era": "1950s-1970s",
+          "influences": ["gospel", "blues", "R&B"],
+          "default_instruments": ["organ", "horns section", "upright bass", "soul drums"]
+        },
+        {
+          "name": "northern soul",
+          "rhythm": "northern soul shuffle, 120-160 BPM",
+          "era": "1960s-present",
+          "influences": ["soul", "funk", "doo-wop"],
+          "default_instruments": ["soulful vocals", "driving drums", "bass guitar", "soul strings"]
+        },
+        {
+          "name": "southern soul",
+          "rhythm": "deep soul groove, 90-120 BPM",
+          "era": "1960s-present",
+          "influences": ["country soul", "blues soul", "gospel"],
+          "default_instruments": ["organ", "slow strings", "warm bass", "soul drums"]
+        },
+        {
+          "name": "psychedelic soul",
+          "rhythm": "experimental soul beat, 90-130 BPM",
+          "era": "1970s-present",
+          "influences": ["psychedelic rock", "soul", "funk"],
+          "default_instruments": ["Moog synth", "wah-wah guitar", "funky bass", "psychedelic strings"]
+        },
+        {
+          "name": "nu soul",
+          "rhythm": "contemporary soul groove, 80-110 BPM",
+          "era": "1990s-present",
+          "influences": ["soul", "jazz", "contemporary R&B"],
+          "default_instruments": ["Fender Rhodes", "jazzy strings", "contemporary bass", "live drums"]
+        }
+      ]
+    },
+    "ambient": {
+      "subgenres": [
+        {
+          "name": "dark ambient",
+          "rhythm": "sparse atmospherics, 0-80 BPM",
+          "era": "1980s-present",
+          "influences": ["industrial", "drone", "noise"],
+          "default_instruments": ["dark pad", "low frequency drones", "field recordings", "harsh textures"]
+        },
+        {
+          "name": "space ambient",
+          "rhythm": "floating cosmic soundscape, 0-60 BPM",
+          "era": "1970s-present",
+          "influences": ["krautrock", "electronic", "new age"],
+          "default_instruments": ["celestial synth", "space echo", "ethereal pads", "cosmic textures"]
+        },
+        {
+          "name": "drone",
+          "rhythm": "sustained tones, 0-40 BPM",
+          "era": "2000s-present",
+          "influences": ["minimalism", "ambient", "Indian classical"],
+          "default_instruments": ["long sustained drone", "subtle movement", "gradual change", "pure tones"]
+        },
+        {
+          "name": "ambient techno",
+          "rhythm": "minimal techno structure, 80-120 BPM",
+          "era": "1990s-present",
+          "influences": ["ambient", "techno", "minimal music"],
+          "default_instruments": ["minimal beat", "ambient pad", "filtered synth", "spacious reverb"]
+        },
+        {
+          "name": "new age",
+          "rhythm": "meditative floating rhythm, 60-90 BPM",
+          "era": "1980s-present",
+          "influences": ["ambient", "world music", "spiritual music"],
+          "default_instruments": ["pan pipes", "Fender Rhodes", "nature sounds", "gentle strings"]
+        }
+      ]
+    },
+    "gospel": {
+      "subgenres": [
+        {
+          "name": "traditional gospel",
+          "rhythm": "church hymn rhythm, 80-120 BPM",
+          "era": "1930s-present",
+          "influences": ["spirituals", "hymns", "African American tradition"],
+          "default_instruments": ["organ", "gospel vocals", "gospel choir", "hand claps"]
+        },
+        {
+          "name": "contemporary gospel",
+          "rhythm": "modern gospel groove, 90-130 BPM",
+          "era": "1980s-present",
+          "influences": ["gospel", "pop", "R&B"],
+          "default_instruments": ["keyboards", "uplifting vocals", "modern drums", "bass guitar"]
+        },
+        {
+          "name": "southern gospel",
+          "rhythm": "jubilant southern rhythm, 90-140 BPM",
+          "era": "1960s-present",
+          "influences": ["gospel", "country", "jubilee"],
+          "default_instruments": ["piano", "emotional vocals", "choir", "energetic percussion"]
+        },
+        {
+          "name": "gospel choir",
+          "rhythm": "vocal harmony focused, 80-130 BPM",
+          "era": "timeless",
+          "influences": ["gospel tradition", "spiritual", "vocal arrangements"],
+          "default_instruments": ["gospel choir", "organ", "piano", "rhythmic percussion"]
+        }
+      ]
+    },
+    "punk": {
+      "subgenres": [
+        {
+          "name": "hardcore punk",
+          "rhythm": "fast aggressive thrash, 180-220 BPM",
+          "era": "1980s-present",
+          "influences": ["punk", "metal", "noise"],
+          "default_instruments": ["distorted guitar", "aggressive bass", "pounding drums", "shouted vocals"]
+        },
+        {
+          "name": "pop punk",
+          "rhythm": "catchy punk beat, 140-180 BPM",
+          "era": "1990s-present",
+          "influences": ["punk", "pop", "power pop"],
+          "default_instruments": ["jangly guitar", "driving bass", "fast drums", "melodic vocals"]
+        },
+        {
+          "name": "post-punk",
+          "rhythm": "driving angular beat, 100-140 BPM",
+          "era": "1980s-present",
+          "influences": ["punk", "art rock", "electronic"],
+          "default_instruments": ["angular guitar", "booming bass", "disciplined drums", "angular vocals"]
+        },
+        {
+          "name": "anarcho-punk",
+          "rhythm": "aggressive political beat, 140-200 BPM",
+          "era": "1980s-present",
+          "influences": ["punk", "hardcore", "protest"],
+          "default_instruments": ["distorted guitar", "punchy bass", "aggressive drums", "protest vocals"]
+        },
+        {
+          "name": "skate punk",
+          "rhythm": "fast skateboarding beat, 140-200 BPM",
+          "era": "1990s-present",
+          "influences": ["punk", "hardcore", "melodic punk"],
+          "default_instruments": ["melodic guitar", "energetic bass", "fast drums", "youthful vocals"]
+        },
+        {
+          "name": "emo",
+          "rhythm": "emotional dynamic beat, 120-180 BPM",
+          "era": "1990s-present",
+          "influences": ["punk", "post-hardcore", "indie rock"],
+          "default_instruments": ["emotional guitar", "melodic bass", "dynamic drums", "vulnerable vocals"]
+        }
+      ]
+    },
+    "indie": {
+      "subgenres": [
+        {
+          "name": "indie rock",
+          "rhythm": "lo-fi alternative beat, 100-140 BPM",
+          "era": "1990s-present",
+          "influences": ["alternative rock", "punk", "experimental"],
+          "default_instruments": ["jangly guitar", "lo-fi bass", "loose drums", "indie vocals"]
+        },
+        {
+          "name": "indie folk",
+          "rhythm": "intimate acoustic groove, 90-130 BPM",
+          "era": "2000s-present",
+          "influences": ["folk", "indie rock", "chamber pop"],
+          "default_instruments": ["acoustic guitar", "gentle vocals", "strings", "light percussion"]
+        },
+        {
+          "name": "indie electronic",
+          "rhythm": "quirky synth-pop beat, 100-140 BPM",
+          "era": "1990s-present",
+          "influences": ["synth pop", "indie rock", "electronic"],
+          "default_instruments": ["lo-fi synth", "programmed drums", "bedroom production", "indie vocals"]
+        },
+        {
+          "name": "math rock",
+          "rhythm": "complex angular rhythm, 120-180 BPM",
+          "era": "1980s-present",
+          "influences": ["post-punk", "prog rock", "indie rock"],
+          "default_instruments": ["angular guitar", "syncopated bass", "complex drums", "understated vocals"]
+        },
+        {
+          "name": "lo-fi indie",
+          "rhythm": "bedroom pop beat, 80-120 BPM",
+          "era": "2000s-present",
+          "influences": ["lo-fi hip hop", "indie pop", "bedroom pop"],
+          "default_instruments": ["bedroom guitar", "lo-fi drums", "tape hiss", "intimate vocals"]
+        },
+        {
+          "name": "chamber pop",
+          "rhythm": "sophisticated indie pop, 100-130 BPM",
+          "era": "1990s-present",
+          "influences": ["indie pop", "chamber music", "baroque pop"],
+          "default_instruments": ["strings", "indie guitar", "refined vocals", "subtle drums"]
+        }
+      ]
+    },
+    "funk": {
+      "subgenres": [
+        {
+          "name": "p-funk",
+          "rhythm": "psychedelic funk groove, 100-130 BPM",
+          "era": "1970s-present",
+          "influences": ["funk", "psychedelic rock", "soul"],
+          "default_instruments": ["psychedelic guitar", "slap bass", "groovy drums", "synth riff"]
+        },
+        {
+          "name": "electro-funk",
+          "rhythm": "robotic funk groove, 110-130 BPM",
+          "era": "1980s-present",
+          "influences": ["electro", "funk", "electronic"],
+          "default_instruments": ["talk-box", "synth bass", "robotic drums", "electronic riff"]
+        },
+        {
+          "name": "acid funk",
+          "rhythm": "acidic funky rhythm, 100-130 BPM",
+          "era": "1980s-present",
+          "influences": ["funk", "acid", "electronic"],
+          "default_instruments": ["acid synth riff", "slap bass", "funky drums", "filtered melody"]
+        },
+        {
+          "name": "go-go",
+          "rhythm": "rapid continuous beat, 100-130 BPM",
+          "era": "1970s-present",
+          "influences": ["funk", "soul", "DC culture"],
+          "default_instruments": ["energetic conga", "high-energy drums", "funky bass", "horn stabs"]
+        },
+        {
+          "name": "boogie",
+          "rhythm": "synth-driven funk groove, 110-130 BPM",
+          "era": "1970s-1980s",
+          "influences": ["funk", "soul", "electronic"],
+          "default_instruments": ["Moog synth", "funky bass line", "live drums", "soulful vocals"]
+        }
+      ]
+    },
+    "world": {
+      "subgenres": [
+        {
+          "name": "afrobeat",
+          "rhythm": "polyrhythmic African groove, 90-120 BPM",
+          "era": "1960s-present",
+          "influences": ["West African rhythm", "jazz", "funk"],
+          "default_instruments": ["horn section", "congas and percussion", "funky bass", "African drums"]
+        },
+        {
+          "name": "flamenco",
+          "rhythm": "passionate Spanish rhythm, 90-180 BPM",
+          "era": "timeless",
+          "influences": ["Spanish folk", "Moorish music", "gypsy culture"],
+          "default_instruments": ["classical guitar", "castanets", "hand claps", "passionate vocals"]
+        },
+        {
+          "name": "celtic",
+          "rhythm": "traditional folk rhythm, 80-160 BPM",
+          "era": "timeless",
+          "influences": ["Irish folk", "Scottish music", "ancient traditions"],
+          "default_instruments": ["fiddle", "tin whistle", "bodhrán", "uilleann pipes"]
+        },
+        {
+          "name": "bollywood",
+          "rhythm": "Indian film music rhythm, 80-140 BPM",
+          "era": "1930s-present",
+          "influences": ["Indian classical", "popular music", "theater"],
+          "default_instruments": ["sitar", "tabla", "orchestral strings", "dramatic vocals"]
+        },
+        {
+          "name": "k-pop",
+          "rhythm": "polished pop beat, 90-130 BPM",
+          "era": "1990s-present",
+          "influences": ["pop", "hip-hop", "R&B"],
+          "default_instruments": ["modern production", "vocal synth", "trap-influenced drums", "catchy hooks"]
+        },
+        {
+          "name": "j-pop",
+          "rhythm": "melodic pop beat, 100-140 BPM",
+          "era": "1970s-present",
+          "influences": ["Japanese pop", "electronic", "anime music"],
+          "default_instruments": ["bright synth", "electronic drums", "melodic vocals", "catchy arrangement"]
+        }
+      ]
+    },
+    "cinematic": {
+      "subgenres": [
+        {
+          "name": "epic orchestral",
+          "rhythm": "grand sweeping tempo, 60-120 BPM",
+          "era": "timeless",
+          "influences": ["classical", "film music", "opera"],
+          "default_instruments": ["full orchestra", "dramatic strings", "French horns", "timpani"]
+        },
+        {
+          "name": "noir soundtrack",
+          "rhythm": "dark mysterious tempo, 60-100 BPM",
+          "era": "1940s-present",
+          "influences": ["jazz", "noir films", "orchestral"],
+          "default_instruments": ["sultry saxophone", "upright bass", "noir strings", "moody piano"]
+        },
+        {
+          "name": "sci-fi synth",
+          "rhythm": "futuristic electronic beat, 80-140 BPM",
+          "era": "1970s-present",
+          "influences": ["synthesizer", "electronic", "science fiction"],
+          "default_instruments": ["futuristic synth", "synthetic strings", "electronic drums", "laser effects"]
+        },
+        {
+          "name": "western score",
+          "rhythm": "dramatic Western rhythm, 80-140 BPM",
+          "era": "1950s-present",
+          "influences": ["western films", "orchestral", "folk"],
+          "default_instruments": ["harmonica", "orchestral brass", "percussion", "dramatic strings"]
+        },
+        {
+          "name": "horror ambient",
+          "rhythm": "unsettling sparse rhythm, 40-100 BPM",
+          "era": "1980s-present",
+          "influences": ["dark ambient", "horror films", "drone"],
+          "default_instruments": ["horror synth", "eerie strings", "unsettling textures", "disturbing soundscapes"]
+        }
+      ]
+    }
+  }
+}

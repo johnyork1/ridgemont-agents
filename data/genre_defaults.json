@@ -1,0 +1,143 @@
+{
+  "_doc": "Fallback pose assignments by genre. Used when mood_map safety valve triggers (low key/mode confidence) or when no mood rule matches.",
+  "genres": {
+    "reggae": {
+      "weeter_pose": "chill/weeter_cool_sunglasses.png",
+      "blubby_pose": "chill/blubby_cool_sunglasses.png",
+      "together_pose": "chill/weeter_blubby_together.png",
+      "default_mood": "chill"
+    },
+    "hip_hop": {
+      "weeter_pose": "hype/weeter_flexing.png",
+      "blubby_pose": "hype/blubby_rocket.png",
+      "together_pose": "chill/weeter_blubby_together.png",
+      "default_mood": "hype"
+    },
+    "pop": {
+      "weeter_pose": "happy/weeter_celebrating.png",
+      "blubby_pose": "happy/blubby_celebrating.png",
+      "together_pose": "chill/weeter_blubby_together.png",
+      "default_mood": "happy"
+    },
+    "rock": {
+      "weeter_pose": "hype/weeter_megaphone.png",
+      "blubby_pose": "hype/blubby_rocket.png",
+      "together_pose": "chill/weeter_blubby_together.png",
+      "default_mood": "hype"
+    },
+    "electronic": {
+      "weeter_pose": "explosive/weeter_surprised.png",
+      "blubby_pose": "explosive/blubby_surprised.png",
+      "together_pose": "chill/weeter_blubby_together.png",
+      "default_mood": "explosive"
+    },
+    "jazz": {
+      "weeter_pose": "chill/weeter_thinking.png",
+      "blubby_pose": "chill/blubby_thinking.png",
+      "together_pose": "chill/weeter_blubby_together.png",
+      "default_mood": "sophisticated"
+    },
+    "classical": {
+      "weeter_pose": "chill/weeter_thinking.png",
+      "blubby_pose": "chill/blubby_thinking.png",
+      "together_pose": "chill/weeter_blubby_together.png",
+      "default_mood": "sophisticated"
+    },
+    "r_and_b": {
+      "weeter_pose": "chill/weeter_sleepy_love.png",
+      "blubby_pose": "chill/blubby_cool_sunglasses.png",
+      "together_pose": "chill/weeter_blubby_together.png",
+      "default_mood": "chill"
+    },
+    "country": {
+      "weeter_pose": "happy/weeter_celebrating.png",
+      "blubby_pose": "happy/blubby_celebrating.png",
+      "together_pose": "chill/weeter_blubby_together.png",
+      "default_mood": "happy"
+    },
+    "blues": {
+      "weeter_pose": "sad/weeter_sad.png",
+      "blubby_pose": "sad/blubby_scared.png",
+      "together_pose": "chill/weeter_blubby_together.png",
+      "default_mood": "sad"
+    },
+    "metal": {
+      "weeter_pose": "moody/weeter_angry_steaming.png",
+      "blubby_pose": "moody/blubby_confused.png",
+      "together_pose": "chill/weeter_blubby_together.png",
+      "default_mood": "moody"
+    },
+    "punk": {
+      "weeter_pose": "moody/weeter_grumpy.png",
+      "blubby_pose": "moody/blubby_shrugging.png",
+      "together_pose": "chill/weeter_blubby_together.png",
+      "default_mood": "moody"
+    },
+    "folk": {
+      "weeter_pose": "chill/weeter_eating.png",
+      "blubby_pose": "chill/blubby_sleeping_pillow.png",
+      "together_pose": "chill/weeter_blubby_together.png",
+      "default_mood": "chill"
+    },
+    "latin": {
+      "weeter_pose": "happy/weeter_celebrating.png",
+      "blubby_pose": "happy/blubby_celebrating.png",
+      "together_pose": "chill/weeter_blubby_together.png",
+      "default_mood": "happy"
+    },
+    "soul": {
+      "weeter_pose": "chill/weeter_sleepy_love.png",
+      "blubby_pose": "chill/blubby_cool_sunglasses.png",
+      "together_pose": "chill/weeter_blubby_together.png",
+      "default_mood": "sophisticated"
+    },
+    "funk": {
+      "weeter_pose": "hype/weeter_flexing.png",
+      "blubby_pose": "hype/blubby_detective.png",
+      "together_pose": "chill/weeter_blubby_together.png",
+      "default_mood": "hype"
+    },
+    "gospel": {
+      "weeter_pose": "happy/weeter_celebrating.png",
+      "blubby_pose": "happy/blubby_celebrating.png",
+      "together_pose": "chill/weeter_blubby_together.png",
+      "default_mood": "happy"
+    },
+    "ambient": {
+      "weeter_pose": "chill/weeter_sleeping_pillow.png",
+      "blubby_pose": "chill/blubby_sleeping_pillow.png",
+      "together_pose": "chill/weeter_blubby_together.png",
+      "default_mood": "chill"
+    },
+    "dance": {
+      "weeter_pose": "hype/weeter_money_eyes.png",
+      "blubby_pose": "hype/blubby_rocket.png",
+      "together_pose": "chill/weeter_blubby_together.png",
+      "default_mood": "hype"
+    },
+    "indie": {
+      "weeter_pose": "chill/weeter_thinking.png",
+      "blubby_pose": "chill/blubby_thinking.png",
+      "together_pose": "chill/weeter_blubby_together.png",
+      "default_mood": "chill"
+    },
+    "world": {
+      "weeter_pose": "happy/weeter_laughing_haha.png",
+      "blubby_pose": "happy/blubby_excited.png",
+      "together_pose": "chill/weeter_blubby_together.png",
+      "default_mood": "happy"
+    },
+    "synthwave": {
+      "weeter_pose": "explosive/weeter_shocked.png",
+      "blubby_pose": "explosive/blubby_mind_blown.png",
+      "together_pose": "chill/weeter_blubby_together.png",
+      "default_mood": "explosive"
+    }
+  },
+  "fallback": {
+    "weeter_pose": "neutral/weeter_0.png",
+    "blubby_pose": "neutral/blubby_0.png",
+    "together_pose": "chill/weeter_blubby_together.png",
+    "default_mood": "chill"
+  }
+}
